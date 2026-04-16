@@ -34,6 +34,4 @@ In Foundry VTT:
 1. Open **Game Systems**
 2. Click **Install System**
 3. Paste this manifest URL:
-
-```text
 https://github.com/druckle/sw1e/releases/download/1.0.0/system.json
