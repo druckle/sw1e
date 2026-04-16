@@ -1,0 +1,201 @@
+
+<form class="sw1e-character-builder-form" autocomplete="off">
+  <section class="rules-note">
+    <p>{{localize "SW1E.Builder.ChapterRuleNote"}}</p>
+  </section>
+
+  <section class="rules-note">
+    <p><strong>{{localize "SW1E.Builder.CoreSkillListTitle"}}:</strong> {{localize "SW1E.Builder.CoreSkillListNote"}}</p>
+  </section>
+
+  <section class="notes-grid compact">
+    <label>
+      <span>{{localize "SW1E.Template"}}</span>
+      <select name="templateId">
+        {{#each templateOptions as |option|}}
+          <option value="{{option.id}}" {{#if option.selected}}selected{{/if}}>{{option.name}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <label>
+      <span>{{localize "SW1E.CharacterName"}}</span>
+      <input name="name" type="text" value="{{name}}" placeholder="{{selectedTemplateName}}">
+    </label>
+    <label>
+      <span>{{localize "SW1E.Species"}}</span>
+      <input name="species" type="text" value="{{species}}">
+    </label>
+    <label>
+      <span>{{localize "SW1E.Credits"}}</span>
+      <input name="credits" type="number" value="{{credits}}" min="0" step="1">
+    </label>
+    <label>
+      <span>{{localize "SW1E.Sex"}}</span>
+      <input name="sex" type="text" value="{{sex}}">
+    </label>
+    <label>
+      <span>{{localize "SW1E.Age"}}</span>
+      <input name="age" type="text" value="{{age}}">
+    </label>
+    <label>
+      <span>{{localize "SW1E.Height"}}</span>
+      <input name="height" type="text" value="{{height}}">
+    </label>
+    <label>
+      <span>{{localize "SW1E.Weight"}}</span>
+      <input name="weight" type="text" value="{{weight}}">
+    </label>
+    <label class="full-width">
+      <span>{{localize "SW1E.PhysicalDescription"}}</span>
+      <textarea name="physicalDescription">{{physicalDescription}}</textarea>
+    </label>
+  </section>
+
+  <section class="list-section top-gap">
+    <div class="section-header">
+      <h3>{{selectedTemplateName}}</h3>
+      <div class="two-line builder-summary">
+        <div class="dice-code">{{localize "SW1E.Builder.SkillPoolRemaining"}}: {{remainingDiceCode}}</div>
+        {{#if templatePageLabel}}
+          <div class="item-meta">{{localize "SW1E.SourcePage"}}: {{templatePageLabel}}</div>
+        {{/if}}
+      </div>
+    </div>
+    {{#if hasOverspent}}
+      <p class="empty-note">{{localize "SW1E.Builder.OverspentWarning"}}</p>
+    {{else}}
+      <p class="empty-note">{{localize "SW1E.Builder.SpendAllDicePrompt"}}</p>
+    {{/if}}
+    {{#if templateSource}}
+      <p class="item-meta">{{templateSource}}</p>
+    {{/if}}
+    {{#if templateNotes}}
+      <p class="item-meta">{{templateNotes}}</p>
+    {{/if}}
+    {{#if hasTemplateGear}}
+      <div class="top-gap">
+        <p class="item-meta"><strong>{{localize "SW1E.Builder.TemplateGearTitle"}}:</strong>{{#if startingGearPage}} {{startingGearPage}}{{/if}}</p>
+        {{#if financialNote}}
+          <p class="item-meta"><strong>{{localize "SW1E.FinancialNote"}}:</strong> {{financialNote}}</p>
+        {{/if}}
+        {{#if startingEquipment.length}}
+          <ol class="item-list">
+            {{#each startingEquipment as |gear|}}
+              <li class="item"><div class="item-name">{{gear}}</div></li>
+            {{/each}}
+          </ol>
+        {{/if}}
+        <label class="top-gap">
+          <input type="checkbox" name="importEquipment" {{#if importEquipment}}checked{{/if}}>
+          <span>{{localize "SW1E.Builder.ImportStartingEquipment"}}</span>
+        </label>
+      </div>
+    {{/if}}
+    {{#if hasTemplateNarrative}}
+      <div class="top-gap">
+        <p class="item-meta"><strong>{{localize "SW1E.Builder.TemplateNarrativeTitle"}}:</strong>{{#if templateBackPageLabel}} {{templateBackPageLabel}}{{/if}}</p>
+        {{#if templateBackground}}
+          <p class="item-meta"><strong>{{localize "SW1E.Background"}}:</strong> {{templateBackground}}</p>
+        {{/if}}
+        {{#if templatePersonality}}
+          <p class="item-meta"><strong>{{localize "SW1E.Personality"}}:</strong> {{templatePersonality}}</p>
+        {{/if}}
+        {{#if templateQuote}}
+          <p class="item-meta"><strong>{{localize "SW1E.Quote"}}:</strong> {{templateQuote}}</p>
+        {{/if}}
+        {{#if templateConnection}}
+          <p class="item-meta"><strong>{{localize "SW1E.ConnectionWithOtherCharacters"}}:</strong> {{templateConnection}}</p>
+        {{/if}}
+        {{#if templateSpecialRule}}
+          <p class="item-meta"><strong>{{localize "SW1E.SpecialRule"}}:</strong> {{templateSpecialRule}}</p>
+        {{/if}}
+      </div>
+    {{/if}}
+  </section>
+
+  <section class="attributes-grid top-gap">
+    {{#each attributes as |attribute|}}
+      <article class="attribute-card">
+        <div class="attribute-header">
+          <h3>{{attribute.label}}</h3>
+          <span class="dice-code">{{attribute.diceCode}}</span>
+        </div>
+      </article>
+    {{/each}}
+  </section>
+
+  <section class="top-gap">
+    {{#each skillGroups as |group|}}
+      <article class="list-section top-gap">
+        <div class="section-header">
+          <h3>{{group.label}}</h3>
+          <span class="dice-code">{{group.attributeCode}}</span>
+        </div>
+        <ol class="item-list">
+          {{#each group.skills as |skill|}}
+            <li class="item flexrow builder-skill-row">
+              <div class="item-name two-line">
+                <span>{{skill.name}}</span>
+                <span class="item-meta">{{localize "SW1E.Builder.BaseCode"}}: {{skill.baseCode}}{{#if skill.sourcePage}} · {{skill.sourcePage}}{{/if}}</span>
+              </div>
+              <div class="builder-select">
+                <label>
+                  <span>{{localize "SW1E.Builder.Allocate"}}</span>
+                  <select name="skill.{{skill.id}}">
+                    {{#each skill.options as |option|}}
+                      <option value="{{option.value}}" {{#if option.selected}}selected{{/if}}>{{option.label}}</option>
+                    {{/each}}
+                  </select>
+                </label>
+              </div>
+              <div class="builder-total">
+                <span class="item-meta">{{localize "SW1E.Builder.TotalCode"}}</span>
+                <span class="dice-code">{{skill.totalCode}}</span>
+              </div>
+            </li>
+          {{/each}}
+        </ol>
+      </article>
+    {{/each}}
+  </section>
+
+  <section class="list-section top-gap">
+    <div class="section-header">
+      <h3>{{localize "SW1E.Force.Title"}}</h3>
+      <span class="dice-code">{{localize "SW1E.Builder.ForceCountsTowardPool"}}</span>
+    </div>
+    {{#if hasAnyTrainedForceSkill}}
+      <ol class="item-list">
+        {{#each forceSkills as |skill|}}
+          <li class="item flexrow builder-skill-row">
+            <div class="item-name two-line">
+              <span>{{skill.label}}</span>
+              <span class="item-meta">{{localize "SW1E.Builder.BaseCode"}}: {{skill.baseCode}}</span>
+            </div>
+            <div class="builder-select">
+              <label>
+                <span>{{localize "SW1E.Builder.Allocate"}}</span>
+                <select name="force.{{skill.key}}" {{#unless skill.trained}}disabled{{/unless}}>
+                  {{#each skill.options as |option|}}
+                    <option value="{{option.value}}" {{#if option.selected}}selected{{/if}}>{{option.label}}</option>
+                  {{/each}}
+                </select>
+              </label>
+            </div>
+            <div class="builder-total">
+              <span class="item-meta">{{localize "SW1E.Builder.TotalCode"}}</span>
+              <span class="dice-code">{{#if skill.trained}}{{skill.totalCode}}{{else}}{{localize "SW1E.Force.UntrainedShort"}}{{/if}}</span>
+            </div>
+          </li>
+        {{/each}}
+      </ol>
+    {{else}}
+      <p class="empty-note">{{localize "SW1E.Builder.NoPrintedForceSkills"}}</p>
+    {{/if}}
+  </section>
+
+  <footer class="sheet-footer builder-footer">
+    <button type="submit" class="quick-action" {{#unless canCreate}}disabled{{/unless}}>{{localize "SW1E.Builder.CreateActor"}}</button>
+    <button type="button" class="quick-action sw1e-builder-cancel">{{localize "SW1E.Cancel"}}</button>
+  </footer>
+</form>

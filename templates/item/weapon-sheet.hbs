@@ -1,0 +1,158 @@
+<form class="sw1e-item-sheet" autocomplete="off">
+  <header class="sheet-header item-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}">
+    <div class="header-fields">
+      <input class="name-input" name="name" type="text" value="{{item.name}}" placeholder="{{localize 'SW1E.Weapon'}}">
+      <div class="item-subtitle">{{diceCode}}</div>
+    </div>
+  </header>
+
+  <section class="notes-grid compact">
+    <label>
+      <span>{{localize 'SW1E.SkillUsed'}}</span>
+      <input name="system.skillUsed" type="text" value="{{system.skillUsed}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Range'}}</span>
+      <input name="system.range" type="text" value="{{system.range}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.DamageDice'}}</span>
+      <input name="system.damageDice" type="number" value="{{system.damageDice}}" min="0" step="1">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.DamagePips'}}</span>
+      <input name="system.damagePips" type="number" value="{{system.damagePips}}" min="0" max="2" step="1">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Ammo'}}</span>
+      <input name="system.ammo" type="text" value="{{system.ammo}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Cost'}}</span>
+      <input name="system.cost" type="number" value="{{system.cost}}" min="0" step="1">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.SourcePage'}}</span>
+      <input name="system.sourcePage" type="text" value="{{system.sourcePage}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.GrenadeWeapon'}}</span>
+      <input name="system.isGrenade" type="checkbox" {{checked system.isGrenade}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.LightsaberWeapon'}}</span>
+      <input name="system.isLightsaber" type="checkbox" {{checked system.isLightsaber}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.LightsaberAddControlDamage'}}</span>
+      <input name="system.lightsaberUsesControlDamage" type="checkbox" {{checked system.lightsaberUsesControlDamage}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.LightsaberSenseParry'}}</span>
+      <input name="system.lightsaberUsesSenseParry" type="checkbox" {{checked system.lightsaberUsesSenseParry}}>
+    </label>
+
+    {{#if system.isGrenade}}
+    <fieldset class="full-width">
+      <legend>{{localize 'SW1E.HitBands'}}</legend>
+      <div class="notes-grid compact">
+        <label>
+          <span>{{localize 'SW1E.TargetNumberMode'}}</span>
+          <select name="system.grenadeTargetNumberMode">
+            <option value="min" {{#if (sw1eEq system.grenadeTargetNumberMode 'min')}}selected{{/if}}>{{localize 'SW1E.UseLowEnd'}}</option>
+            <option value="max" {{#if (sw1eEq system.grenadeTargetNumberMode 'max')}}selected{{/if}}>{{localize 'SW1E.UseHighEnd'}}</option>
+          </select>
+        </label>
+        <div></div>
+        <label>
+          <span>{{localize 'SW1E.Short'}} {{localize 'SW1E.Min'}}</span>
+          <input name="system.grenadeShortTNMin" type="number" value="{{system.grenadeShortTNMin}}" min="0" step="1">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Short'}} {{localize 'SW1E.Max'}}</span>
+          <input name="system.grenadeShortTNMax" type="number" value="{{system.grenadeShortTNMax}}" min="0" step="1">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Medium'}} {{localize 'SW1E.Min'}}</span>
+          <input name="system.grenadeMediumTNMin" type="number" value="{{system.grenadeMediumTNMin}}" min="0" step="1">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Medium'}} {{localize 'SW1E.Max'}}</span>
+          <input name="system.grenadeMediumTNMax" type="number" value="{{system.grenadeMediumTNMax}}" min="0" step="1">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Long'}} {{localize 'SW1E.Min'}}</span>
+          <input name="system.grenadeLongTNMin" type="number" value="{{system.grenadeLongTNMin}}" min="0" step="1">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Long'}} {{localize 'SW1E.Max'}}</span>
+          <input name="system.grenadeLongTNMax" type="number" value="{{system.grenadeLongTNMax}}" min="0" step="1">
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="full-width">
+      <legend>{{localize 'SW1E.BlastBands'}}</legend>
+      <div class="notes-grid compact">
+        <label>
+          <span>{{localize 'SW1E.PointBlank'}} {{localize 'SW1E.BlastRadius'}}</span>
+          <input name="system.blastPointBlankMax" type="number" value="{{system.blastPointBlankMax}}" min="0" step="1">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.PointBlank'}} {{localize 'SW1E.DamageDice'}}</span>
+          <input name="system.blastPointBlankDamageDice" type="number" value="{{system.blastPointBlankDamageDice}}" min="0" step="1">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.PointBlank'}} {{localize 'SW1E.DamagePips'}}</span>
+          <input name="system.blastPointBlankDamagePips" type="number" value="{{system.blastPointBlankDamagePips}}" min="0" max="2" step="1">
+        </label>
+
+        <label>
+          <span>{{localize 'SW1E.Short'}} {{localize 'SW1E.BlastRadius'}}</span>
+          <input name="system.blastShortMax" type="number" value="{{system.blastShortMax}}" min="0" step="1">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Short'}} {{localize 'SW1E.DamageDice'}}</span>
+          <input name="system.blastShortDamageDice" type="number" value="{{system.blastShortDamageDice}}" min="0" step="1">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Short'}} {{localize 'SW1E.DamagePips'}}</span>
+          <input name="system.blastShortDamagePips" type="number" value="{{system.blastShortDamagePips}}" min="0" max="2" step="1">
+        </label>
+
+        <label>
+          <span>{{localize 'SW1E.Medium'}} {{localize 'SW1E.BlastRadius'}}</span>
+          <input name="system.blastMediumMax" type="number" value="{{system.blastMediumMax}}" min="0" step="1">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Medium'}} {{localize 'SW1E.DamageDice'}}</span>
+          <input name="system.blastMediumDamageDice" type="number" value="{{system.blastMediumDamageDice}}" min="0" step="1">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Medium'}} {{localize 'SW1E.DamagePips'}}</span>
+          <input name="system.blastMediumDamagePips" type="number" value="{{system.blastMediumDamagePips}}" min="0" max="2" step="1">
+        </label>
+
+        <label>
+          <span>{{localize 'SW1E.Long'}} {{localize 'SW1E.BlastRadius'}}</span>
+          <input name="system.blastLongMax" type="number" value="{{system.blastLongMax}}" min="0" step="1">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Long'}} {{localize 'SW1E.DamageDice'}}</span>
+          <input name="system.blastLongDamageDice" type="number" value="{{system.blastLongDamageDice}}" min="0" step="1">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Long'}} {{localize 'SW1E.DamagePips'}}</span>
+          <input name="system.blastLongDamagePips" type="number" value="{{system.blastLongDamagePips}}" min="0" max="2" step="1">
+        </label>
+      </div>
+    </fieldset>
+    {{/if}}
+
+    <label class="full-width">
+      <span>{{localize 'SW1E.Notes'}}</span>
+      <textarea name="system.notes">{{system.notes}}</textarea>
+    </label>
+  </section>
+</form>

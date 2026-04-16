@@ -1,0 +1,79 @@
+<form class="sw1e-item-sheet" autocomplete="off">
+  <header class="sheet-header item-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}">
+    <div class="header-fields">
+      <input class="name-input" name="name" type="text" value="{{item.name}}" placeholder="{{localize 'SW1E.Force.Power'}}">
+      <div class="item-subtitle">{{requirementLabel}}</div>
+      <div class="item-subtitle">{{difficultySummary}}</div>
+    </div>
+  </header>
+
+  <section class="notes-grid compact">
+    <label>
+      <span>{{localize 'SW1E.Force.RequiresControl'}}</span>
+      <input name="system.requiresControl" type="checkbox" {{checked system.requiresControl}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Force.RequiresSense'}}</span>
+      <input name="system.requiresSense" type="checkbox" {{checked system.requiresSense}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Force.RequiresAlter'}}</span>
+      <input name="system.requiresAlter" type="checkbox" {{checked system.requiresAlter}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Force.KeepUp'}}</span>
+      <input name="system.keepUp" type="checkbox" {{checked system.keepUp}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Force.PowerUp'}}</span>
+      <input name="system.isUp" type="checkbox" {{checked system.isUp}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Force.DarkSideWarningLabel'}}</span>
+      <input name="system.darkSideWarning" type="checkbox" {{checked system.darkSideWarning}}>
+    </label>
+
+    <label>
+      <span>{{localize 'SW1E.Force.ControlTarget'}}</span>
+      <input name="system.controlTarget" type="number" value="{{system.controlTarget}}" min="0" step="1">
+    </label>
+    <label class="full-width">
+      <span>{{localize 'SW1E.Force.ControlDifficulty'}}</span>
+      <input name="system.controlDifficulty" type="text" value="{{system.controlDifficulty}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Force.SenseTarget'}}</span>
+      <input name="system.senseTarget" type="number" value="{{system.senseTarget}}" min="0" step="1">
+    </label>
+    <label class="full-width">
+      <span>{{localize 'SW1E.Force.SenseDifficulty'}}</span>
+      <input name="system.senseDifficulty" type="text" value="{{system.senseDifficulty}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Force.AlterTarget'}}</span>
+      <input name="system.alterTarget" type="number" value="{{system.alterTarget}}" min="0" step="1">
+    </label>
+    <label class="full-width">
+      <span>{{localize 'SW1E.Force.AlterDifficulty'}}</span>
+      <input name="system.alterDifficulty" type="text" value="{{system.alterDifficulty}}">
+    </label>
+
+    <label class="full-width">
+      <span>{{localize 'SW1E.Force.ResistedBy'}}</span>
+      <input name="system.resistedBy" type="text" value="{{system.resistedBy}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.SourcePage'}}</span>
+      <input name="system.sourcePage" type="text" value="{{system.sourcePage}}">
+    </label>
+    <label class="full-width">
+      <span>{{localize 'SW1E.Force.Effect'}}</span>
+      <textarea name="system.effect">{{system.effect}}</textarea>
+    </label>
+    <label class="full-width">
+      <span>{{localize 'SW1E.Notes'}}</span>
+      <textarea name="system.notes">{{system.notes}}</textarea>
+    </label>
+  </section>
+</form>

@@ -1,0 +1,54 @@
+<form class="sw1e-item-sheet" autocomplete="off">
+  <header class="sheet-header item-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}">
+    <div class="header-fields">
+      <input class="name-input" name="name" type="text" value="{{item.name}}" placeholder="{{localize 'SW1E.Equipment'}}">
+      {{#if (sw1eEq system.category 'armor')}}
+        <div class="item-subtitle">{{localize 'SW1E.Combat.ArmorBonusLabel'}}: {{armorCode}}</div>
+      {{/if}}
+    </div>
+  </header>
+
+  <section class="notes-grid compact">
+    <label>
+      <span>{{localize 'SW1E.Category'}}</span>
+      <select name="system.category">
+        {{#each config.categories as |cat|}}
+          <option value="{{cat.key}}" {{#if (sw1eEq ../system.category cat.key)}}selected{{/if}}>{{cat.label}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Quantity'}}</span>
+      <input name="system.quantity" type="number" value="{{system.quantity}}" min="0" step="1">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Equipped'}}</span>
+      <input name="system.equipped" type="checkbox" {{checked system.equipped}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Cost'}}</span>
+      <input name="system.cost" type="number" value="{{system.cost}}" min="0" step="1">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Weight'}}</span>
+      <input name="system.weightText" type="text" value="{{system.weightText}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Combat.ArmorDice'}}</span>
+      <input name="system.armorDice" type="number" value="{{system.armorDice}}" min="0" step="1">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Combat.ArmorPips'}}</span>
+      <input name="system.armorPips" type="number" value="{{system.armorPips}}" min="0" max="2" step="1">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.SourcePage'}}</span>
+      <input name="system.sourcePage" type="text" value="{{system.sourcePage}}">
+    </label>
+    <label class="full-width">
+      <span>{{localize 'SW1E.Notes'}}</span>
+      <textarea name="system.notes">{{system.notes}}</textarea>
+    </label>
+  </section>
+</form>

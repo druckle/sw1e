@@ -1,0 +1,60 @@
+<form class="sw1e-item-sheet" autocomplete="off">
+  <header class="sheet-header item-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}">
+    <div class="header-fields">
+      <input class="name-input" name="name" type="text" value="{{item.name}}" placeholder="{{localize 'SW1E.StarshipWeapon'}}">
+      <div class="item-subtitle">{{localize 'SW1E.FireControl'}}: {{fireControlCode}} • {{localize 'SW1E.Combat.Damage'}}: {{diceCode}}</div>
+    </div>
+  </header>
+
+  <section class="notes-grid compact">
+    <label>
+      <span>{{localize 'SW1E.Mount'}}</span>
+      <input name="system.mount" type="text" value="{{system.mount}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.FireArc'}}</span>
+      <input name="system.fireArc" type="text" value="{{system.fireArc}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.FireControl'}} {{localize 'SW1E.Dice'}}</span>
+      <input name="system.fireControlDice" type="number" value="{{system.fireControlDice}}" min="0" step="1">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.FireControl'}} {{localize 'SW1E.Pips'}}</span>
+      <input name="system.fireControlPips" type="number" value="{{system.fireControlPips}}" min="0" max="2" step="1">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.DamageDice'}}</span>
+      <input name="system.damageDice" type="number" value="{{system.damageDice}}" min="0" step="1">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.DamagePips'}}</span>
+      <input name="system.damagePips" type="number" value="{{system.damagePips}}" min="0" max="2" step="1">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Ammo'}}</span>
+      <input name="system.ammo" type="text" value="{{system.ammo}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Operational'}}</span>
+      <input name="system.operational" type="checkbox" {{checked system.operational}}>
+    </label>
+    <label class="full-width">
+      <span>{{localize 'SW1E.RangeNotes'}}</span>
+      <input name="system.rangeNotes" type="text" value="{{system.rangeNotes}}">
+    </label>
+    <label class="full-width">
+      <span>{{localize 'SW1E.ShortUseNote'}}</span>
+      <input name="system.shortUseNote" type="text" value="{{system.shortUseNote}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.SourcePage'}}</span>
+      <input name="system.sourcePage" type="text" value="{{system.sourcePage}}">
+    </label>
+    <label class="full-width">
+      <span>{{localize 'SW1E.Notes'}}</span>
+      <textarea name="system.notes">{{system.notes}}</textarea>
+    </label>
+  </section>
+</form>

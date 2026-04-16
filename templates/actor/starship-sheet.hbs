@@ -1,0 +1,440 @@
+<form class="sw1e-sheet {{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}">
+    <div class="header-fields">
+      <div class="name-row">
+        <input class="name-input" name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'TYPES.Actor.starship'}}">
+        <input name="system.identity.shipClass" type="text" value="{{system.identity.shipClass}}" placeholder="{{localize 'SW1E.ShipClass'}}">
+      </div>
+      <div class="sheet-subtitle-row">
+        <span class="sheet-subtitle">{{actorTypeLabel}}</span>
+        <span class="item-meta">{{localize 'SW1E.Starship.OverviewHint'}}</span>
+      </div>
+      <div class="resource-grid four">
+        <label>
+          <span>{{localize 'SW1E.Crew'}}</span>
+          <input name="system.identity.crew" type="text" value="{{system.identity.crew}}">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Passengers'}}</span>
+          <input name="system.identity.passengers" type="text" value="{{system.identity.passengers}}">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.CargoCapacity'}}</span>
+          <input name="system.identity.cargoCapacity" type="text" value="{{system.identity.cargoCapacity}}">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Consumables'}}</span>
+          <input name="system.identity.consumables" type="text" value="{{system.identity.consumables}}">
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="overview">{{localize 'SW1E.Tabs.Overview'}}</a>
+    <a class="item" data-tab="combat">{{localize 'SW1E.Tabs.Combat'}}</a>
+    <a class="item" data-tab="systems">{{localize 'SW1E.Tabs.Systems'}}</a>
+    <a class="item" data-tab="loadout">{{localize 'SW1E.Tabs.Loadout'}}</a>
+    <a class="item" data-tab="notes">{{localize 'SW1E.Tabs.Notes'}}</a>
+  </nav>
+
+  <section class="sheet-body">
+    <div class="tab" data-group="primary" data-tab="overview">
+      <section class="rules-note">
+        <p>{{localize 'SW1E.Starship.RulesNote'}}</p>
+      </section>
+
+      <section class="notes-grid">
+        <label>
+          <span>{{localize 'SW1E.Manufacturer'}}</span>
+          <input name="system.identity.manufacturer" type="text" value="{{system.identity.manufacturer}}">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Model'}}</span>
+          <input name="system.identity.model" type="text" value="{{system.identity.model}}">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Scale'}}</span>
+          <input name="system.identity.scale" type="text" value="{{system.identity.scale}}">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.HyperdriveMultiplier'}}</span>
+          <input name="system.travel.hyperdriveMultiplier" type="text" value="{{system.travel.hyperdriveMultiplier}}">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.NavComputer'}}</span>
+          <input name="system.travel.navComputer" type="text" value="{{system.travel.navComputer}}">
+        </label>
+        <label>
+          <span>{{localize 'SW1E.HyperdriveBackups'}}</span>
+          <input name="system.travel.hyperdriveBackups" type="text" value="{{system.travel.hyperdriveBackups}}">
+        </label>
+        <label class="full-width">
+          <span>{{localize 'SW1E.Description'}}</span>
+          <textarea name="system.identity.description">{{system.identity.description}}</textarea>
+        </label>
+        <label class="full-width">
+          <span>{{localize 'SW1E.RouteNotes'}}</span>
+          <textarea name="system.travel.routeNotes">{{system.travel.routeNotes}}</textarea>
+        </label>
+      </section>
+
+      <section class="list-section top-gap">
+        <div class="section-header">
+          <h3>{{localize 'SW1E.Starship.Astrogation.TitleShort'}}</h3>
+          <div class="item-controls action-controls">
+            <button type="button" class="sw1e-starship-action mini-button" data-action="astrogation">{{localize 'SW1E.Starship.Astrogation.Roll'}}</button>
+            <button type="button" class="sw1e-starship-action mini-button" data-action="mishap">{{localize 'SW1E.Starship.Astrogation.MishapRoll'}}</button>
+          </div>
+        </div>
+        {{#if lastAstrogation}}
+          <div class="rules-note">
+            <p><strong>{{localize 'SW1E.AstrogationRoute'}}:</strong> {{lastAstrogation.routeLabel}}</p>
+            <p><strong>{{localize 'SW1E.Starship.Astrogation.Outcome'}}:</strong> {{lastAstrogation.outcomeLabel}} • <strong>{{localize 'SW1E.Starship.Helpers.TargetNumber'}}:</strong> {{lastAstrogation.targetNumber}} • <strong>{{localize 'SW1E.Total'}}:</strong> {{lastAstrogation.total}} • <strong>{{localize 'SW1E.Starship.Astrogation.PlannedTravelTime'}}:</strong> {{lastAstrogation.travelDays}} {{localize 'SW1E.Days'}}</p>
+          </div>
+        {{else}}
+          <div class="rules-note">
+            <p>{{localize 'SW1E.Starship.Astrogation.NoRecentSolution'}}</p>
+          </div>
+        {{/if}}
+      </section>
+    </div>
+
+    <div class="tab" data-group="primary" data-tab="combat">
+      <section class="rules-note">
+        <p>{{localize 'SW1E.Starship.CombatHint'}}</p>
+      </section>
+
+      <section class="starship-action-bar">
+        <button type="button" class="sw1e-starship-action" data-action="speed">{{localize 'SW1E.Starship.Helpers.SpeedRoll'}}</button>
+        <button type="button" class="sw1e-starship-action" data-action="evasion">{{localize 'SW1E.Starship.Helpers.EvasionRoll'}}</button>
+        <button type="button" class="sw1e-starship-action" data-action="shields">{{localize 'SW1E.Starship.Helpers.ShieldRoll'}}</button>
+        <button type="button" class="sw1e-starship-action" data-action="systemDamage">{{localize 'SW1E.Starship.Helpers.SystemDamageRoll'}}</button>
+        <button type="button" class="sw1e-starship-action" data-action="syncTarget">{{localize 'SW1E.Starship.Helpers.SyncTargetRange'}}</button>
+      </section>
+
+      <section class="list-section">
+        <div class="section-header">
+          <h3>{{localize 'SW1E.Starship.Helpers.EngagementRanges'}}</h3>
+          <span class="item-meta">{{localize 'SW1E.Starship.Helpers.EngagementHint'}}</span>
+        </div>
+        <ol class="item-list">
+          {{#if engagementRanges.length}}
+            {{#each engagementRanges as |entry|}}
+              <li class="item flexrow">
+                <div class="item-name two-line">
+                  <span>{{entry.targetName}}</span>
+                  <span class="item-meta">{{#if entry.targeted}}{{localize 'SW1E.Starship.Helpers.TargetedNow'}} • {{/if}}{{localize 'SW1E.CurrentRange'}}: {{entry.rangeLabel}}</span>
+                </div>
+                <div class="item-controls action-controls">
+                  <select class="sw1e-range-contact-select" data-target-id="{{entry.targetId}}">
+                    {{#each @root.rangeBands as |band|}}
+                      <option value="{{band.key}}" {{#if (sw1eEq ../rangeBand band.key)}}selected{{/if}}>{{band.label}}</option>
+                    {{/each}}
+                  </select>
+                  <button type="button" class="mini-button sw1e-range-contact-remove" data-target-id="{{entry.targetId}}">{{localize 'SW1E.Delete'}}</button>
+                </div>
+              </li>
+            {{/each}}
+          {{else}}
+            <li class="item flexrow"><span class="empty-note">{{localize 'SW1E.Starship.Helpers.NoEngagements'}}</span></li>
+          {{/if}}
+        </ol>
+      </section>
+
+      <section class="notes-grid compact top-gap">
+        <label>
+          <span>{{localize 'SW1E.RangeBand'}}</span>
+          <select name="system.status.rangeBand">
+            {{#each rangeBands as |band|}}
+              <option value="{{band.key}}" {{#if (sw1eEq ../system.status.rangeBand band.key)}}selected{{/if}}>{{band.label}}</option>
+            {{/each}}
+          </select>
+        </label>
+        <label>
+          <span>{{localize 'SW1E.DamageState'}}</span>
+          <select name="system.status.damageState">
+            {{#each damageStates as |state|}}
+              <option value="{{state.key}}" {{#if (sw1eEq ../system.status.damageState state.key)}}selected{{/if}}>{{state.label}}</option>
+            {{/each}}
+          </select>
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Operational'}}</span>
+          <input type="text" value="{{#if system.status.destroyed}}{{localize 'SW1E.No'}}{{else}}{{localize 'SW1E.Yes'}}{{/if}}" disabled>
+        </label>
+        <label>
+          <span>{{localize 'SW1E.SystemStatus'}}</span>
+          <input type="text" value="{{localize 'SW1E.Starship.SystemsHint'}}" disabled>
+        </label>
+      </section>
+
+      <section class="ship-code-grid top-gap">
+        {{#each codeCards as |code|}}
+          <article class="attribute-card">
+            <header class="attribute-header">
+              <span>{{code.label}}</span>
+              <span class="dice-code">{{code.diceCode}}</span>
+            </header>
+            {{#if code.changed}}
+              <p class="item-meta">{{localize 'SW1E.Starship.Helpers.BaseCode'}}: {{code.baseDiceCode}}</p>
+            {{/if}}
+            {{#if code.blocked}}
+              <p class="empty-note">{{code.blockedReason}}</p>
+            {{/if}}
+            {{#each code.notes as |note|}}
+              <p class="item-meta">{{note}}</p>
+            {{/each}}
+            <div class="inline-fields">
+              <label>
+                <span>{{localize 'SW1E.Dice'}}</span>
+                <input name="system.codes.{{code.key}}.dice" type="number" value="{{code.dice}}" min="0" step="1">
+              </label>
+              <label>
+                <span>{{localize 'SW1E.Pips'}}</span>
+                <input name="system.codes.{{code.key}}.pips" type="number" value="{{code.pips}}" min="0" max="2" step="1">
+              </label>
+            </div>
+          </article>
+        {{/each}}
+      </section>
+
+      <section class="notes-grid compact top-gap">
+        <label>
+          <span>{{localize 'SW1E.DeadInSpace'}}</span>
+          <input name="system.status.deadInSpace" type="checkbox" {{checked system.status.deadInSpace}}>
+        </label>
+        <label>
+          <span>{{localize 'SW1E.Destroyed'}}</span>
+          <input name="system.status.destroyed" type="checkbox" {{checked system.status.destroyed}}>
+        </label>
+        <label class="full-width">
+          <span>{{localize 'SW1E.CombatNotes'}}</span>
+          <textarea name="system.notes.combatNotes">{{system.notes.combatNotes}}</textarea>
+        </label>
+      </section>
+    </div>
+
+    <div class="tab" data-group="primary" data-tab="systems">
+      <section class="rules-note">
+        <p>{{localize 'SW1E.Starship.SystemsHint'}}</p>
+      </section>
+
+      <section class="starship-action-bar">
+        <button type="button" class="sw1e-starship-action" data-action="repair">{{localize 'SW1E.Starship.Helpers.RepairRoll'}}</button>
+        <button type="button" class="sw1e-starship-action" data-action="clearTemporary">{{localize 'SW1E.Starship.Helpers.ClearTemporaryEffects'}}</button>
+        <button type="button" class="sw1e-starship-action" data-action="clearIonization">{{localize 'SW1E.Starship.Helpers.ClearIonization'}}</button>
+        <button type="button" class="sw1e-starship-action" data-action="restoreShields">{{localize 'SW1E.Starship.Helpers.RestoreShieldStatus'}}</button>
+      </section>
+
+      <section class="notes-grid compact top-gap">
+        <label>
+          <span>{{localize 'SW1E.Ionized'}}</span>
+          <input name="system.status.ionized" type="checkbox" {{checked system.status.ionized}}>
+          <small>{{localize 'SW1E.Starship.Helpers.RepairTargetIonized'}}</small>
+        </label>
+        <label>
+          <span>{{localize 'SW1E.BlownShields'}}</span>
+          <input name="system.status.blownShields" type="checkbox" {{checked system.status.blownShields}}>
+          <small>{{localize 'SW1E.Starship.Helpers.RepairTargetBlownShields'}}</small>
+        </label>
+      </section>
+
+      <section class="ship-system-grid">
+        {{#each systemStatusCards as |entry|}}
+          <article class="force-skill-card">
+            <header class="attribute-header">
+              <span>{{entry.label}}</span>
+              <span class="item-meta">{{entry.stateLabel}}</span>
+            </header>
+            <div class="inline-fields">
+              <label>
+                <span>{{localize 'SW1E.Damaged'}}</span>
+                <input name="system.systems.{{entry.key}}.damaged" type="checkbox" {{checked entry.damaged}}>
+              </label>
+              <label>
+                <span>{{localize 'SW1E.Disabled'}}</span>
+                <input name="system.systems.{{entry.key}}.disabled" type="checkbox" {{checked entry.disabled}}>
+              </label>
+              <label>
+                <span>{{localize 'SW1E.Repaired'}}</span>
+                <input name="system.systems.{{entry.key}}.repaired" type="checkbox" {{checked entry.repaired}}>
+              </label>
+            </div>
+            <div class="inline-fields">
+              <label>
+                <span>{{localize 'SW1E.RepairedAt'}}</span>
+                <input name="system.systems.{{entry.key}}.repairedAt" type="text" value="{{entry.repairedAt}}">
+              </label>
+              <label>
+                <span>{{localize 'SW1E.RepairedBy'}}</span>
+                <input name="system.systems.{{entry.key}}.repairedBy" type="text" value="{{entry.repairedBy}}">
+              </label>
+            </div>
+            <div class="inline-fields">
+              <label>
+                <span>{{localize 'SW1E.RepairDifficulty'}}</span>
+                <input name="system.systems.{{entry.key}}.repairDifficulty" type="text" value="{{entry.repairDifficulty}}">
+              </label>
+              <label>
+                <span>{{localize 'SW1E.RepairAttempt'}}</span>
+                <select name="system.systems.{{entry.key}}.repairAttempt">
+                  <option value=""></option>
+                  <option value="first" {{#if (sw1eEq entry.repairAttempt 'first')}}selected{{/if}}>{{localize 'SW1E.Starship.Repair.Attempts.first'}}</option>
+                  <option value="second" {{#if (sw1eEq entry.repairAttempt 'second')}}selected{{/if}}>{{localize 'SW1E.Starship.Repair.Attempts.second'}}</option>
+                  <option value="third" {{#if (sw1eEq entry.repairAttempt 'third')}}selected{{/if}}>{{localize 'SW1E.Starship.Repair.Attempts.third'}}</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              <span>{{localize 'SW1E.Notes'}}</span>
+              <textarea name="system.systems.{{entry.key}}.notes">{{entry.notes}}</textarea>
+            </label>
+          </article>
+        {{/each}}
+      </section>
+
+      <section class="list-section top-gap">
+        <div class="section-header">
+          <h3>{{localize 'SW1E.ShipSystem'}}</h3>
+          <button type="button" class="item-create add-button" data-type="shipSystem">{{localize 'SW1E.AddShipSystem'}}</button>
+        </div>
+        <ol class="item-list">
+          {{#if shipSystems.length}}
+            {{#each shipSystems as |item|}}
+              <li class="item flexrow" data-item-id="{{item.id}}">
+                <div class="item-name three-line">
+                  <span>{{item.name}}</span>
+                  <span class="item-meta">{{item.systemLabel}}</span>
+                  <span class="item-meta">{{#if item.disabled}}{{localize 'SW1E.Disabled'}}{{else}}{{#if item.damaged}}{{localize 'SW1E.Damaged'}}{{else}}{{#if item.repaired}}{{localize 'SW1E.Repaired'}}{{else}}{{localize 'SW1E.Operational'}}{{/if}}{{/if}}{{/if}}</span>
+                  {{#if item.repairedAtDisplay}}<span class="item-meta">{{localize 'SW1E.RepairedAt'}}: {{item.repairedAtDisplay}}{{#if item.repairedBy}} • {{localize 'SW1E.RepairedBy'}}: {{item.repairedBy}}{{/if}}</span>{{/if}}
+                </div>
+                <div class="item-controls">
+                  <a class="item-edit" title="{{localize 'SW1E.Edit'}}"><i class="fas fa-edit"></i></a>
+                  <a class="item-delete" title="{{localize 'SW1E.Delete'}}"><i class="fas fa-trash"></i></a>
+                </div>
+              </li>
+            {{/each}}
+          {{else}}
+            <li class="item flexrow"><span class="empty-note">{{localize 'SW1E.NoShipItems'}}</span></li>
+          {{/if}}
+        </ol>
+      </section>
+    </div>
+
+    <div class="tab" data-group="primary" data-tab="loadout">
+      <section class="rules-note">
+        <p>{{localize 'SW1E.Starship.LoadoutHint'}}</p>
+      </section>
+
+      <section class="starship-action-bar">
+        <button type="button" class="sw1e-starship-action" data-action="astrogation">{{localize 'SW1E.Starship.Astrogation.Roll'}}</button>
+        <button type="button" class="sw1e-starship-action" data-action="mishap">{{localize 'SW1E.Starship.Astrogation.MishapRoll'}}</button>
+      </section>
+
+      <section class="list-section">
+        <div class="section-header">
+          <h3>{{localize 'SW1E.Weapons'}}</h3>
+          <button type="button" class="item-create add-button" data-type="starshipWeapon">{{localize 'SW1E.AddStarshipWeapon'}}</button>
+        </div>
+        <ol class="item-list">
+          {{#if weapons.length}}
+            {{#each weapons as |item|}}
+              <li class="item flexrow weapon-row" data-item-id="{{item.id}}">
+                <div class="item-name three-line">
+                  <span>{{item.name}}</span>
+                  <span class="item-meta">{{item.fireControlCode}} {{localize 'SW1E.FireControl'}} • {{item.damageCode}} {{localize 'SW1E.Combat.Damage'}}</span>
+                  {{#if item.fireControlChanged}}
+                    <span class="item-meta">{{localize 'SW1E.Starship.Helpers.BaseCode'}}: {{item.fireControlBaseCode}}</span>
+                  {{/if}}
+                  {{#if item.fireControlBlocked}}
+                    <span class="empty-note">{{item.fireControlBlockedReason}}</span>
+                  {{/if}}
+                  <span class="item-meta">{{#if item.mount}}{{item.mount}}{{/if}}{{#if item.fireArc}} • {{item.fireArc}}{{/if}}{{#if item.rangeNotes}} • {{item.rangeNotes}}{{/if}}{{#if item.shortUseNote}} • {{item.shortUseNote}}{{/if}}{{#unless item.operational}} • {{localize 'SW1E.Disabled'}}{{/unless}}</span>
+                </div>
+                <div class="item-controls action-controls">
+                  <button type="button" class="sw1e-roll-starship-weapon mini-button" data-mode="gunnery">{{localize 'SW1E.Starship.Helpers.GunneryRoll'}}</button>
+                  <button type="button" class="sw1e-roll-starship-weapon mini-button" data-mode="damage">{{localize 'SW1E.Starship.Helpers.DamageRoll'}}</button>
+                  <a class="item-edit" title="{{localize 'SW1E.Edit'}}"><i class="fas fa-edit"></i></a>
+                  <a class="item-delete" title="{{localize 'SW1E.Delete'}}"><i class="fas fa-trash"></i></a>
+                </div>
+              </li>
+            {{/each}}
+          {{else}}
+            <li class="item flexrow"><span class="empty-note">{{localize 'SW1E.NoShipItems'}}</span></li>
+          {{/if}}
+        </ol>
+      </section>
+
+      <section class="list-section top-gap">
+        <div class="section-header">
+          <h3>{{localize 'SW1E.Equipment'}}</h3>
+          <button type="button" class="item-create add-button" data-type="equipment">{{localize 'SW1E.AddEquipment'}}</button>
+        </div>
+        <ol class="item-list">
+          {{#if shipGear.length}}
+            {{#each shipGear as |item|}}
+              <li class="item flexrow" data-item-id="{{item.id}}">
+                <div class="item-name two-line">
+                  <span>{{item.name}}</span>
+                  <span class="item-meta">{{localize (concat 'SW1E.EquipmentCategory.' item.category)}}{{#if item.quantity}} • ×{{item.quantity}}{{/if}}</span>
+                </div>
+                <div class="item-controls">
+                  <a class="item-edit" title="{{localize 'SW1E.Edit'}}"><i class="fas fa-edit"></i></a>
+                  <a class="item-delete" title="{{localize 'SW1E.Delete'}}"><i class="fas fa-trash"></i></a>
+                </div>
+              </li>
+            {{/each}}
+          {{else}}
+            <li class="item flexrow"><span class="empty-note">{{localize 'SW1E.NoShipItems'}}</span></li>
+          {{/if}}
+        </ol>
+      </section>
+
+      <section class="list-section top-gap">
+        <div class="section-header">
+          <h3>{{localize 'SW1E.AstrogationRoute'}}</h3>
+          <button type="button" class="item-create add-button" data-type="astrogationRoute">{{localize 'SW1E.AddAstrogationRoute'}}</button>
+        </div>
+        <ol class="item-list">
+          {{#if routes.length}}
+            {{#each routes as |item|}}
+              <li class="item flexrow" data-item-id="{{item.id}}">
+                <div class="item-name three-line">
+                  <span>{{item.name}}</span>
+                  <span class="item-meta">{{item.origin}} {{#if item.destination}}→ {{item.destination}}{{/if}}</span>
+                  <span class="item-meta">{{item.standardDuration}}{{#if item.preCalculated}} • {{localize 'SW1E.PreCalculated'}}{{/if}}</span>
+                </div>
+                <div class="item-controls action-controls">
+                  <button type="button" class="sw1e-roll-route mini-button">{{localize 'SW1E.Starship.Astrogation.Roll'}}</button>
+                  <a class="item-edit" title="{{localize 'SW1E.Edit'}}"><i class="fas fa-edit"></i></a>
+                  <a class="item-delete" title="{{localize 'SW1E.Delete'}}"><i class="fas fa-trash"></i></a>
+                </div>
+              </li>
+            {{/each}}
+          {{else}}
+            <li class="item flexrow"><span class="empty-note">{{localize 'SW1E.NoShipItems'}}</span></li>
+          {{/if}}
+        </ol>
+      </section>
+    </div>
+
+    <div class="tab" data-group="primary" data-tab="notes">
+      <section class="notes-grid">
+        <label class="full-width">
+          <span>{{localize 'SW1E.ShipNotes'}}</span>
+          <textarea name="system.notes.shipNotes">{{system.notes.shipNotes}}</textarea>
+        </label>
+        <label class="full-width">
+          <span>{{localize 'SW1E.RepairNotes'}}</span>
+          <textarea name="system.notes.repairNotes">{{system.notes.repairNotes}}</textarea>
+        </label>
+        <label class="full-width">
+          <span>{{localize 'SW1E.GamemasterNotes'}}</span>
+          <textarea name="system.notes.gamemasterNotes">{{system.notes.gamemasterNotes}}</textarea>
+        </label>
+      </section>
+    </div>
+  </section>
+</form>

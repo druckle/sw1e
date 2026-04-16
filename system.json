@@ -1,0 +1,111 @@
+{
+  "id": "sw1e",
+  "title": "Star Wars: The Roleplaying Game 1E",
+  "description": "A Foundry VTT system shell for West End Games Star Wars 1st Edition, with character/NPC support, segmented personal-scale combat tracking, Force support, bundled core-rulebook compendiums, and dedicated starship support through combat, range, and astrogation helpers.",
+  "version": "1.0.0",
+  "manifest": "https://github.com/druckle/sw1e/releases/latest/download/system.json",
+  "download": "https://github.com/druckle/sw1e/releases/download/1.0.0/system.zip",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.359"
+  },
+  "authors": [
+    {
+      "name": "Darren Ruckle"
+    }
+  ],
+  "esmodules": [
+    "sw1e.mjs"
+  ],
+  "styles": [
+    "styles/sw1e.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {},
+      "starship": {}
+    },
+    "Item": {
+      "skill": {},
+      "equipment": {},
+      "weapon": {},
+      "forcePower": {},
+      "starshipWeapon": {},
+      "shipSystem": {},
+      "astrogationRoute": {}
+    }
+  },
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "manifest": "",
+  "download": "",
+  "url": "",
+  "packs": [
+    {
+      "name": "skills",
+      "label": "Core Skills",
+      "system": "sw1e",
+      "type": "Item",
+      "path": "packs/skills.db"
+    },
+    {
+      "name": "weapons",
+      "label": "Core Weapons",
+      "system": "sw1e",
+      "type": "Item",
+      "path": "packs/weapons.db"
+    },
+    {
+      "name": "equipment",
+      "label": "Core Equipment",
+      "system": "sw1e",
+      "type": "Item",
+      "path": "packs/equipment.db"
+    },
+    {
+      "name": "forcepowers",
+      "label": "Force Powers",
+      "system": "sw1e",
+      "type": "Item",
+      "path": "packs/forcepowers.db"
+    },
+    {
+      "name": "charactertemplates",
+      "label": "Character Templates",
+      "system": "sw1e",
+      "type": "Actor",
+      "path": "packs/charactertemplates.db"
+    },
+    {
+      "name": "npcs",
+      "label": "NPCs",
+      "system": "sw1e",
+      "type": "Actor",
+      "path": "packs/npcs.db"
+    },
+    {
+      "name": "starships",
+      "label": "Starships",
+      "system": "sw1e",
+      "type": "Actor",
+      "path": "packs/starships.db"
+    },
+    {
+      "name": "gmreferences",
+      "label": "GM Starship Reference",
+      "system": "sw1e",
+      "type": "JournalEntry",
+      "path": "packs/gmreferences.db"
+    }
+  ]
+}

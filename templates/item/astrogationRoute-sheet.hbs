@@ -1,0 +1,36 @@
+<form class="sw1e-item-sheet" autocomplete="off">
+  <header class="sheet-header item-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}">
+    <div class="header-fields">
+      <input class="name-input" name="name" type="text" value="{{item.name}}" placeholder="{{localize 'SW1E.AstrogationRoute'}}">
+      <div class="item-subtitle">{{system.origin}} {{#if system.destination}}→ {{system.destination}}{{/if}}</div>
+    </div>
+  </header>
+
+  <section class="notes-grid compact">
+    <label>
+      <span>{{localize 'SW1E.Origin'}}</span>
+      <input name="system.origin" type="text" value="{{system.origin}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Destination'}}</span>
+      <input name="system.destination" type="text" value="{{system.destination}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.StandardDuration'}}</span>
+      <input name="system.standardDuration" type="text" value="{{system.standardDuration}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.PreCalculated'}}</span>
+      <input name="system.preCalculated" type="checkbox" {{checked system.preCalculated}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.SourcePage'}}</span>
+      <input name="system.sourcePage" type="text" value="{{system.sourcePage}}">
+    </label>
+    <label class="full-width">
+      <span>{{localize 'SW1E.RouteNotes'}}</span>
+      <textarea name="system.routeNotes">{{system.routeNotes}}</textarea>
+    </label>
+  </section>
+</form>

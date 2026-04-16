@@ -1,0 +1,40 @@
+<form class="sw1e-item-sheet" autocomplete="off">
+  <header class="sheet-header item-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}">
+    <div class="header-fields">
+      <input class="name-input" name="name" type="text" value="{{item.name}}" placeholder="{{localize 'SW1E.Skill'}}">
+      <div class="item-subtitle">{{diceCode}}</div>
+    </div>
+  </header>
+
+  <section class="notes-grid compact">
+    <label>
+      <span>{{localize 'SW1E.LinkedAttribute'}}</span>
+      <select name="system.linkedAttribute">
+        {{#each config.attributes as |attr|}}
+          <option value="{{attr.key}}" {{#if (sw1eEq ../system.linkedAttribute attr.key)}}selected{{/if}}>{{attr.label}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Dice'}}</span>
+      <input name="system.dice" type="number" value="{{system.dice}}" min="0" step="1">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Pips'}}</span>
+      <input name="system.pips" type="number" value="{{system.pips}}" min="0" max="2" step="1">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.AdvancedSkill'}}</span>
+      <input name="system.isAdvanced" type="checkbox" {{checked system.isAdvanced}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.SourcePage'}}</span>
+      <input name="system.sourcePage" type="text" value="{{system.sourcePage}}">
+    </label>
+    <label class="full-width">
+      <span>{{localize 'SW1E.Notes'}}</span>
+      <textarea name="system.notes">{{system.notes}}</textarea>
+    </label>
+  </section>
+</form>

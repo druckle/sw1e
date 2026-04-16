@@ -1,0 +1,70 @@
+<form class="sw1e-item-sheet" autocomplete="off">
+  <header class="sheet-header item-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}">
+    <div class="header-fields">
+      <input class="name-input" name="name" type="text" value="{{item.name}}" placeholder="{{localize 'SW1E.ShipSystem'}}">
+      <div class="item-subtitle">{{systemLabel}}</div>
+    </div>
+  </header>
+
+  <section class="notes-grid compact">
+    <label>
+      <span>{{localize 'SW1E.SystemKey'}}</span>
+      <select name="system.systemKey">
+        <option value="">{{localize 'SW1E.None'}}</option>
+        {{#each config.shipSystems as |entry|}}
+          <option value="{{entry.key}}" {{#if (sw1eEq ../system.systemKey entry.key)}}selected{{/if}}>{{entry.label}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Operational'}}</span>
+      <input name="system.operational" type="checkbox" {{checked system.operational}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Damaged'}}</span>
+      <input name="system.damaged" type="checkbox" {{checked system.damaged}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Disabled'}}</span>
+      <input name="system.disabled" type="checkbox" {{checked system.disabled}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.Repaired'}}</span>
+      <input name="system.repaired" type="checkbox" {{checked system.repaired}}>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.RepairedAt'}}</span>
+      <input name="system.repairedAt" type="text" value="{{system.repairedAt}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.RepairedBy'}}</span>
+      <input name="system.repairedBy" type="text" value="{{system.repairedBy}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.RepairDifficulty'}}</span>
+      <input name="system.repairDifficulty" type="text" value="{{system.repairDifficulty}}">
+    </label>
+    <label>
+      <span>{{localize 'SW1E.RepairAttempt'}}</span>
+      <select name="system.repairAttempt">
+        <option value=""></option>
+        <option value="first" {{#if (sw1eEq system.repairAttempt 'first')}}selected{{/if}}>{{localize 'SW1E.Starship.Repair.Attempts.first'}}</option>
+        <option value="second" {{#if (sw1eEq system.repairAttempt 'second')}}selected{{/if}}>{{localize 'SW1E.Starship.Repair.Attempts.second'}}</option>
+        <option value="third" {{#if (sw1eEq system.repairAttempt 'third')}}selected{{/if}}>{{localize 'SW1E.Starship.Repair.Attempts.third'}}</option>
+      </select>
+    </label>
+    <label>
+      <span>{{localize 'SW1E.SourcePage'}}</span>
+      <input name="system.sourcePage" type="text" value="{{system.sourcePage}}">
+    </label>
+    <label class="full-width">
+      <span>{{localize 'SW1E.RepairNotes'}}</span>
+      <textarea name="system.repairNotes">{{system.repairNotes}}</textarea>
+    </label>
+    <label class="full-width">
+      <span>{{localize 'SW1E.Notes'}}</span>
+      <textarea name="system.notes">{{system.notes}}</textarea>
+    </label>
+  </section>
+</form>

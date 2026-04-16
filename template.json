@@ -1,0 +1,354 @@
+{
+  "Actor": {
+    "types": [
+      "character",
+      "npc",
+      "starship"
+    ],
+    "templates": {
+      "common": {
+        "identity": {
+          "species": "",
+          "sex": "",
+          "age": "",
+          "height": "",
+          "weight": "",
+          "physicalDescription": "",
+          "background": "",
+          "personality": "",
+          "objectives": "",
+          "quote": "",
+          "templateName": ""
+        },
+        "resources": {
+          "skillPoints": 0,
+          "forcePoints": 1,
+          "darkSidePoints": 0,
+          "credits": 0
+        },
+        "status": {
+          "woundStatus": "healthy",
+          "defenseNotes": "",
+          "actionPenaltyNotes": ""
+        },
+        "notes": {
+          "storyNotes": "",
+          "gamemasterNotes": ""
+        },
+        "force": {
+          "control": {
+            "dice": 0,
+            "pips": 0
+          },
+          "sense": {
+            "dice": 0,
+            "pips": 0
+          },
+          "alter": {
+            "dice": 0,
+            "pips": 0
+          },
+          "teacher": "",
+          "trainingNotes": "",
+          "codeNotes": ""
+        },
+        "healing": {
+          "medpacLocked": false,
+          "medpacAvailableAt": 0,
+          "lastMedpacAt": 0,
+          "lastNaturalHealingAt": 0,
+          "rejuveTank": {
+            "active": false,
+            "startedAt": 0,
+            "endsAt": 0,
+            "durationRoll": 0,
+            "unit": "",
+            "statusAtStart": ""
+          }
+        }
+      },
+      "attributes": {
+        "attributes": {
+          "dexterity": {
+            "label": "Dexterity",
+            "dice": 0,
+            "pips": 0
+          },
+          "knowledge": {
+            "label": "Knowledge",
+            "dice": 0,
+            "pips": 0
+          },
+          "mechanical": {
+            "label": "Mechanical",
+            "dice": 0,
+            "pips": 0
+          },
+          "perception": {
+            "label": "Perception",
+            "dice": 0,
+            "pips": 0
+          },
+          "strength": {
+            "label": "Strength",
+            "dice": 0,
+            "pips": 0
+          },
+          "technical": {
+            "label": "Technical",
+            "dice": 0,
+            "pips": 0
+          }
+        }
+      },
+      "starshipCommon": {
+        "identity": {
+          "shipClass": "",
+          "manufacturer": "",
+          "model": "",
+          "scale": "",
+          "crew": "",
+          "passengers": "",
+          "cargoCapacity": "",
+          "consumables": "",
+          "description": ""
+        },
+        "travel": {
+          "hyperdriveMultiplier": "x1",
+          "navComputer": "",
+          "hyperdriveBackups": "",
+          "routeNotes": ""
+        },
+        "codes": {
+          "sublightSpeed": {
+            "dice": 0,
+            "pips": 0
+          },
+          "maneuverability": {
+            "dice": 0,
+            "pips": 0
+          },
+          "hull": {
+            "dice": 0,
+            "pips": 0
+          },
+          "shields": {
+            "dice": 0,
+            "pips": 0
+          }
+        },
+        "status": {
+          "rangeBand": "medium",
+          "damageState": "operational",
+          "ionized": false,
+          "blownShields": false,
+          "deadInSpace": false,
+          "destroyed": false
+        },
+        "systems": {
+          "ionDrives": {
+            "damaged": false,
+            "disabled": false,
+            "notes": "",
+            "repaired": false,
+            "repairedAt": "",
+            "repairedBy": "",
+            "repairDifficulty": "",
+            "repairAttempt": ""
+          },
+          "navComputer": {
+            "damaged": false,
+            "disabled": false,
+            "notes": "",
+            "repaired": false,
+            "repairedAt": "",
+            "repairedBy": "",
+            "repairDifficulty": "",
+            "repairAttempt": ""
+          },
+          "hyperdrives": {
+            "damaged": false,
+            "disabled": false,
+            "notes": "",
+            "repaired": false,
+            "repairedAt": "",
+            "repairedBy": "",
+            "repairDifficulty": "",
+            "repairAttempt": ""
+          },
+          "weaponSystem": {
+            "damaged": false,
+            "disabled": false,
+            "notes": "",
+            "repaired": false,
+            "repairedAt": "",
+            "repairedBy": "",
+            "repairDifficulty": "",
+            "repairAttempt": ""
+          },
+          "shields": {
+            "damaged": false,
+            "disabled": false,
+            "notes": "",
+            "repaired": false,
+            "repairedAt": "",
+            "repairedBy": "",
+            "repairDifficulty": "",
+            "repairAttempt": ""
+          },
+          "lateralThrusters": {
+            "damaged": false,
+            "disabled": false,
+            "notes": "",
+            "repaired": false,
+            "repairedAt": "",
+            "repairedBy": "",
+            "repairDifficulty": "",
+            "repairAttempt": ""
+          }
+        },
+        "notes": {
+          "shipNotes": "",
+          "combatNotes": "",
+          "repairNotes": "",
+          "gamemasterNotes": ""
+        }
+      }
+    },
+    "character": {
+      "templates": [
+        "common",
+        "attributes"
+      ]
+    },
+    "npc": {
+      "templates": [
+        "common",
+        "attributes"
+      ]
+    },
+    "starship": {
+      "templates": [
+        "starshipCommon"
+      ]
+    }
+  },
+  "Item": {
+    "types": [
+      "skill",
+      "equipment",
+      "weapon",
+      "forcePower",
+      "starshipWeapon",
+      "shipSystem",
+      "astrogationRoute"
+    ],
+    "skill": {
+      "linkedAttribute": "dexterity",
+      "dice": 0,
+      "pips": 0,
+      "isAdvanced": false,
+      "notes": "",
+      "sourcePage": ""
+    },
+    "equipment": {
+      "category": "gear",
+      "quantity": 1,
+      "weightText": "",
+      "notes": "",
+      "sourcePage": "",
+      "equipped": false,
+      "armorDice": 0,
+      "armorPips": 0,
+      "cost": null
+    },
+    "weapon": {
+      "category": "weapon",
+      "skillUsed": "",
+      "range": "",
+      "damageDice": 0,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "",
+      "sourcePage": "",
+      "cost": null,
+      "isGrenade": false,
+      "grenadeTargetNumberMode": "max",
+      "grenadeShortTNMin": 0,
+      "grenadeShortTNMax": 0,
+      "grenadeMediumTNMin": 0,
+      "grenadeMediumTNMax": 0,
+      "grenadeLongTNMin": 0,
+      "grenadeLongTNMax": 0,
+      "blastPointBlankMax": 2,
+      "blastShortMax": 0,
+      "blastMediumMax": 0,
+      "blastLongMax": 0,
+      "blastPointBlankDamageDice": 0,
+      "blastPointBlankDamagePips": 0,
+      "blastShortDamageDice": 0,
+      "blastShortDamagePips": 0,
+      "blastMediumDamageDice": 0,
+      "blastMediumDamagePips": 0,
+      "blastLongDamageDice": 0,
+      "blastLongDamagePips": 0,
+      "isLightsaber": false,
+      "lightsaberUsesControlDamage": false,
+      "lightsaberUsesSenseParry": false
+    },
+    "forcePower": {
+      "requiresControl": false,
+      "requiresSense": false,
+      "requiresAlter": false,
+      "controlDifficulty": "",
+      "controlTarget": 0,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": ""
+    },
+    "starshipWeapon": {
+      "mount": "",
+      "fireArc": "",
+      "fireControlDice": 0,
+      "fireControlPips": 0,
+      "damageDice": 0,
+      "damagePips": 0,
+      "ammo": "",
+      "shortUseNote": "",
+      "rangeNotes": "",
+      "operational": true,
+      "notes": "",
+      "sourcePage": ""
+    },
+    "shipSystem": {
+      "systemKey": "",
+      "damaged": false,
+      "disabled": false,
+      "operational": true,
+      "repairNotes": "",
+      "notes": "",
+      "sourcePage": "",
+      "repaired": false,
+      "repairedAt": "",
+      "repairedBy": "",
+      "repairDifficulty": "",
+      "repairAttempt": ""
+    },
+    "astrogationRoute": {
+      "origin": "",
+      "destination": "",
+      "standardDuration": "",
+      "preCalculated": false,
+      "routeNotes": "",
+      "sourcePage": ""
+    }
+  }
+}
