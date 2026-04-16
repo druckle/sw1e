@@ -1,0 +1,877 @@
+[
+  {
+    "_id": "d67864ea273e2216",
+    "name": "Hold-out Blaster",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Blaster",
+      "range": "3-4 / 5-8 / 9-12",
+      "damageDice": 3,
+      "damagePips": 1,
+      "ammo": "",
+      "notes": "",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 300
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 10,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "d2276e5df50d2539",
+    "name": "Sporting Blaster",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Blaster",
+      "range": "3-10 / 11-30 / 31-120",
+      "damageDice": 3,
+      "damagePips": 1,
+      "ammo": "",
+      "notes": "",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 300
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 20,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "0e6f593f45ddb4b7",
+    "name": "Blaster Pistol",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Blaster",
+      "range": "3-10 / 11-30 / 31-120",
+      "damageDice": 4,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 500
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 30,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "e148d72c2d3ca20b",
+    "name": "Heavy Blaster Pistol",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Blaster",
+      "range": "3-7 / 8-25 / 26-50",
+      "damageDice": 5,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 750
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 40,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "7d3f6519b2708ee4",
+    "name": "Hunting Blaster",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Blaster",
+      "range": "3-30 / 31-100 / 101-300",
+      "damageDice": 4,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 500
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 50,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "614810f6e2d6f0bc",
+    "name": "Blaster Rifle",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Blaster",
+      "range": "3-30 / 31-100 / 101-300",
+      "damageDice": 5,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 1000
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 60,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "c01cabdc2b593202",
+    "name": "Blaster Carbine",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Blaster",
+      "range": "3-25 / 26-60 / 61-250",
+      "damageDice": 5,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 900
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 70,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "45e612e39464626f",
+    "name": "Repeating Blaster",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Blaster",
+      "range": "3-50 / 51-120 / 121-300",
+      "damageDice": 6,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 2000
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 80,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "4a69c2d1bc31e3e7",
+    "name": "Medium Repeat Blaster",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Blaster",
+      "range": "3-60 / 61-150 / 151-400",
+      "damageDice": 7,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 3000
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 90,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "d270bdd38ff44941",
+    "name": "Heavy Repeat Blaster",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Blaster",
+      "range": "3-75 / 76-200 / 201-500",
+      "damageDice": 8,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 5000
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 100,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "8cbb20dded4d5bbe",
+    "name": "Crossbow",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Dexterity",
+      "range": "3-10 / 11-30 / 31-50",
+      "damageDice": 2,
+      "damagePips": 2,
+      "ammo": "",
+      "notes": "Archaic or unusual weapon; trained users may have a custom Dexterity weapon skill.",
+      "sourcePage": "p. 139",
+      "cost": null
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 110,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "6bbf364155e99dd8",
+    "name": "Longbow",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Dexterity",
+      "range": "3-10 / 11-30 / 31-100",
+      "damageDice": 2,
+      "damagePips": 2,
+      "ammo": "",
+      "notes": "Archaic or unusual weapon; trained users may have a custom Dexterity weapon skill.",
+      "sourcePage": "p. 139",
+      "cost": null
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 120,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "d719a4e641f7d009",
+    "name": "Black-powder Pistol",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Dexterity",
+      "range": "3-4 / 5-8 / 9-12",
+      "damageDice": 2,
+      "damagePips": 2,
+      "ammo": "",
+      "notes": "Archaic or unusual weapon; trained users may have a custom Dexterity weapon skill.",
+      "sourcePage": "p. 139",
+      "cost": null
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 130,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "21e49b1cf6d89584",
+    "name": "Musket",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Dexterity",
+      "range": "3-10 / 11-30 / 31-100",
+      "damageDice": 3,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "Archaic or unusual weapon; trained users may have a custom Dexterity weapon skill.",
+      "sourcePage": "p. 139",
+      "cost": null
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 140,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "23aef265bce2cf70",
+    "name": "Rifle",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Dexterity",
+      "range": "3-30 / 31-100 / 101-300",
+      "damageDice": 3,
+      "damagePips": 1,
+      "ammo": "",
+      "notes": "Archaic or unusual weapon; trained users may have a custom Dexterity weapon skill.",
+      "sourcePage": "p. 139",
+      "cost": null
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 150,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "8eb7e0d8f2d6c95b",
+    "name": "Submachinegun",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Dexterity",
+      "range": "3-10 / 11-50 / 51-100",
+      "damageDice": 4,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "Archaic or unusual weapon; trained users may have a custom Dexterity weapon skill.",
+      "sourcePage": "p. 139",
+      "cost": null
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 160,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "c8ed0e28766e1352",
+    "name": "Wookiee Bowcaster",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Dexterity",
+      "range": "3-10 / 11-30 / 31-50",
+      "damageDice": 4,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "Archaic or unusual weapon; trained users may have a custom Dexterity weapon skill.",
+      "sourcePage": "p. 139",
+      "cost": null
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 170,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "9c21b218a42d3cf0",
+    "name": "Grenade",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Grenade",
+      "range": "Throw: 3-7 / 8-20 / 21-40",
+      "damageDice": 5,
+      "damagePips": 0,
+      "ammo": "single-use",
+      "notes": "Blast damage by distance: 5D / 4D / 3D / 2D. Hit bands: 3-4 / 5-6 / 7-10.",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 200,
+      "isGrenade": true,
+      "grenadeTargetNumberMode": "max",
+      "grenadeShortTNMin": 3,
+      "grenadeShortTNMax": 4,
+      "grenadeMediumTNMin": 5,
+      "grenadeMediumTNMax": 6,
+      "grenadeLongTNMin": 7,
+      "grenadeLongTNMax": 10,
+      "blastPointBlankMax": 2,
+      "blastShortMax": 4,
+      "blastMediumMax": 6,
+      "blastLongMax": 10,
+      "blastPointBlankDamageDice": 5,
+      "blastPointBlankDamagePips": 0,
+      "blastShortDamageDice": 4,
+      "blastShortDamagePips": 0,
+      "blastMediumDamageDice": 3,
+      "blastMediumDamagePips": 0,
+      "blastLongDamageDice": 2,
+      "blastLongDamagePips": 0
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 180,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "896cc9ab86334d10",
+    "name": "Thermal Detonator",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Grenade",
+      "range": "Throw: 3-4 / 5-7 / 8-12",
+      "damageDice": 10,
+      "damagePips": 0,
+      "ammo": "single-use",
+      "notes": "Blast damage by distance: 10D / 8D / 5D / 2D. Hit bands: 3-8 / 9-12 / 13-20.",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 2000,
+      "isGrenade": true,
+      "grenadeTargetNumberMode": "max",
+      "grenadeShortTNMin": 3,
+      "grenadeShortTNMax": 8,
+      "grenadeMediumTNMin": 9,
+      "grenadeMediumTNMax": 12,
+      "grenadeLongTNMin": 13,
+      "grenadeLongTNMax": 20,
+      "blastPointBlankMax": 2,
+      "blastShortMax": 8,
+      "blastMediumMax": 12,
+      "blastLongMax": 20,
+      "blastPointBlankDamageDice": 10,
+      "blastPointBlankDamagePips": 0,
+      "blastShortDamageDice": 8,
+      "blastShortDamagePips": 0,
+      "blastMediumDamageDice": 5,
+      "blastMediumDamagePips": 0,
+      "blastLongDamageDice": 2,
+      "blastLongDamagePips": 0
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 190,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "193a920f8a7fe340",
+    "name": "Hands",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Brawling",
+      "range": "Melee",
+      "damageDice": 0,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "Damage: STR.",
+      "sourcePage": "p. 139",
+      "cost": null
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 200,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "c64599f8d2d3c950",
+    "name": "Club",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Melee Weapons",
+      "range": "Melee",
+      "damageDice": 0,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "Damage: STR+1D.",
+      "sourcePage": "p. 139",
+      "cost": null
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 210,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "24b73ae93a89f8f2",
+    "name": "Gaderffii",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Melee Weapons",
+      "range": "Melee",
+      "damageDice": 0,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "Damage: STR+1D.",
+      "sourcePage": "p. 139",
+      "cost": null
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 220,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "a7fe4c9b7f10cf35",
+    "name": "Spear",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Melee Weapons",
+      "range": "Melee",
+      "damageDice": 0,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "Damage: STR+1D+1.",
+      "sourcePage": "p. 139",
+      "cost": null
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 230,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "77b32b56db44029f",
+    "name": "Vibroaxe",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Melee Weapons",
+      "range": "Melee",
+      "damageDice": 0,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "Damage: STR+2D.",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 500
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 240,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "292adbee02e6b1bf",
+    "name": "Vibroblade",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Melee Weapons",
+      "range": "Melee",
+      "damageDice": 0,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "Damage: STR+1D+2.",
+      "sourcePage": "p. 139; p. 141",
+      "cost": 250
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 250,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "11bd32d1ddbecda8",
+    "name": "Lightsaber",
+    "type": "weapon",
+    "img": "systems/sw1e/icons/weapon.svg",
+    "system": {
+      "category": "weapon",
+      "skillUsed": "Melee Weapons",
+      "range": "Melee",
+      "damageDice": 5,
+      "damagePips": 0,
+      "ammo": "",
+      "notes": "Primary attack skill: Melee Weapons. Trained users may instead use a custom Lightsaber skill if the item is changed to match it. Damage: 5D; characters with the Control skill add their skill code to damage. Characters with Sense may use Sense instead of melee parry and may parry blaster bolts.",
+      "sourcePage": "p. 139",
+      "cost": null,
+      "isLightsaber": true,
+      "lightsaberUsesControlDamage": true,
+      "lightsaberUsesSenseParry": true
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 260,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  }
+]

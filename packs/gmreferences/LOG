@@ -1,0 +1,8 @@
+2026/04/16-06:16:24.302 5a04 Recovering log #16
+2026/04/16-06:16:24.307 5a04 Delete type=0 #16
+2026/04/16-06:16:24.307 5a04 Delete type=3 #14
+2026/04/16-06:16:32.550 15f4 Level-0 table #21: started
+2026/04/16-06:16:32.550 15f4 Level-0 table #21: 0 bytes OK
+2026/04/16-06:16:32.552 15f4 Delete type=0 #19
+2026/04/16-06:16:32.559 15f4 Manual compaction at level-0 from '!journal!38028a32cc83aa83' @ 72057594037927935 : 1 .. '!journal.pages!f278de8235f1dc3d.05383e7168a6e1dd' @ 0 : 0; will stop at (end)
+2026/04/16-06:16:32.559 15f4 Manual compaction at level-1 from '!journal!38028a32cc83aa83' @ 72057594037927935 : 1 .. '!journal.pages!f278de8235f1dc3d.05383e7168a6e1dd' @ 0 : 0; will stop at (end)

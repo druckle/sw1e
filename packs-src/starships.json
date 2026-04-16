@@ -1,0 +1,1077 @@
+[
+  {
+    "_id": "b3dd7ad03e57a5f1",
+    "name": "Millennium Falcon",
+    "type": "starship",
+    "img": "systems/sw1e/icons/starship.svg",
+    "system": {
+      "identity": {
+        "shipClass": "Souped-up stock light freighter",
+        "model": "",
+        "manufacturer": "",
+        "scale": "",
+        "crew": "2",
+        "passengers": "6",
+        "cargoCapacity": "100 metric tons",
+        "consumables": "2 months",
+        "description": "Infamous smuggler ship operated by Solo; effectively a heavily modified stock light freighter."
+      },
+      "travel": {
+        "hyperdriveMultiplier": "x1/2",
+        "navComputer": "yes",
+        "hyperdriveBackups": "yes",
+        "routeNotes": "Stat block source: p. 56."
+      },
+      "codes": {
+        "sublightSpeed": {
+          "dice": 4,
+          "pips": 0
+        },
+        "maneuverability": {
+          "dice": 1,
+          "pips": 0
+        },
+        "hull": {
+          "dice": 6,
+          "pips": 0
+        },
+        "shields": {
+          "dice": 3,
+          "pips": 0
+        }
+      },
+      "status": {
+        "rangeBand": "medium",
+        "damageState": "operational",
+        "ionized": false,
+        "blownShields": false,
+        "deadInSpace": false,
+        "destroyed": false
+      },
+      "systems": {
+        "ionDrives": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "navComputer": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "hyperdrives": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "weaponSystem": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "shields": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "lateralThrusters": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        }
+      },
+      "notes": {
+        "shipNotes": "Source: p. 56.",
+        "combatNotes": "",
+        "repairNotes": "",
+        "gamemasterNotes": ""
+      }
+    },
+    "prototypeToken": {
+      "name": "Millennium Falcon",
+      "displayName": 20,
+      "displayBars": 40,
+      "disposition": 0,
+      "texture": {
+        "src": "systems/sw1e/icons/starship.svg",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": null
+      },
+      "actorLink": false,
+      "bar1": {
+        "attribute": null
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "randomImg": false,
+      "appendNumber": false,
+      "prependAdjective": false
+    },
+    "items": [
+      {
+        "_id": "4de38c54d4c335a1",
+        "name": "Quad Laser Cannon (Port)",
+        "type": "starshipWeapon",
+        "img": "systems/sw1e/icons/starship-weapon.svg",
+        "system": {
+          "mount": "",
+          "fireArc": "",
+          "fireControlDice": 3,
+          "fireControlPips": 0,
+          "damageDice": 6,
+          "damagePips": 0,
+          "ammo": "",
+          "shortUseNote": "",
+          "rangeNotes": "",
+          "operational": true,
+          "notes": "One of two quad laser cannons carried by the ship.",
+          "sourcePage": "pp. 55-57"
+        },
+        "effects": [],
+        "folder": null,
+        "sort": 10,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": "sw1e",
+          "systemVersion": "0.6.5",
+          "coreVersion": "13.35",
+          "createdTime": 1773514536255,
+          "modifiedTime": 1773514536255,
+          "lastModifiedBy": "0000000000000000"
+        }
+      },
+      {
+        "_id": "b001f71995ef0199",
+        "name": "Quad Laser Cannon (Starboard)",
+        "type": "starshipWeapon",
+        "img": "systems/sw1e/icons/starship-weapon.svg",
+        "system": {
+          "mount": "",
+          "fireArc": "",
+          "fireControlDice": 3,
+          "fireControlPips": 0,
+          "damageDice": 6,
+          "damagePips": 0,
+          "ammo": "",
+          "shortUseNote": "",
+          "rangeNotes": "",
+          "operational": true,
+          "notes": "One of two quad laser cannons carried by the ship.",
+          "sourcePage": "pp. 55-57"
+        },
+        "effects": [],
+        "folder": null,
+        "sort": 20,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": "sw1e",
+          "systemVersion": "0.6.5",
+          "coreVersion": "13.35",
+          "createdTime": 1773514536255,
+          "modifiedTime": 1773514536255,
+          "lastModifiedBy": "0000000000000000"
+        }
+      },
+      {
+        "_id": "1457719d50d67dea",
+        "name": "Concussion Missiles",
+        "type": "starshipWeapon",
+        "img": "systems/sw1e/icons/starship-weapon.svg",
+        "system": {
+          "mount": "",
+          "fireArc": "",
+          "fireControlDice": 3,
+          "fireControlPips": 0,
+          "damageDice": 10,
+          "damagePips": 0,
+          "ammo": "",
+          "shortUseNote": "Concussion missile launcher.",
+          "rangeNotes": "",
+          "operational": true,
+          "notes": "",
+          "sourcePage": "pp. 55-57"
+        },
+        "effects": [],
+        "folder": null,
+        "sort": 30,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": "sw1e",
+          "systemVersion": "0.6.5",
+          "coreVersion": "13.35",
+          "createdTime": 1773514536255,
+          "modifiedTime": 1773514536255,
+          "lastModifiedBy": "0000000000000000"
+        }
+      }
+    ],
+    "effects": [],
+    "folder": null,
+    "sort": 10,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.6.5",
+      "coreVersion": "13.35",
+      "createdTime": 1773514536255,
+      "modifiedTime": 1773514536255,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "36e0eb4f0c23d4a3",
+    "name": "Stock Light Freighter",
+    "type": "starship",
+    "img": "systems/sw1e/icons/starship.svg",
+    "system": {
+      "identity": {
+        "shipClass": "Light freighter",
+        "model": "",
+        "manufacturer": "",
+        "scale": "",
+        "crew": "2",
+        "passengers": "6",
+        "cargoCapacity": "100 metric tons",
+        "consumables": "2 months",
+        "description": "Common small trading vessel frequently encountered where trade routes are less intensively developed than in the Core."
+      },
+      "travel": {
+        "hyperdriveMultiplier": "x2",
+        "navComputer": "yes",
+        "hyperdriveBackups": "yes",
+        "routeNotes": "Stat block source: p. 56."
+      },
+      "codes": {
+        "sublightSpeed": {
+          "dice": 2,
+          "pips": 0
+        },
+        "maneuverability": {
+          "dice": 0,
+          "pips": 0
+        },
+        "hull": {
+          "dice": 4,
+          "pips": 0
+        },
+        "shields": {
+          "dice": 0,
+          "pips": 0
+        }
+      },
+      "status": {
+        "rangeBand": "medium",
+        "damageState": "operational",
+        "ionized": false,
+        "blownShields": false,
+        "deadInSpace": false,
+        "destroyed": false
+      },
+      "systems": {
+        "ionDrives": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "navComputer": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "hyperdrives": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "weaponSystem": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "shields": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "lateralThrusters": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        }
+      },
+      "notes": {
+        "shipNotes": "Source: p. 56.",
+        "combatNotes": "",
+        "repairNotes": "",
+        "gamemasterNotes": ""
+      }
+    },
+    "prototypeToken": {
+      "name": "Stock Light Freighter",
+      "displayName": 20,
+      "displayBars": 40,
+      "disposition": 0,
+      "texture": {
+        "src": "systems/sw1e/icons/starship.svg",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": null
+      },
+      "actorLink": false,
+      "bar1": {
+        "attribute": null
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "randomImg": false,
+      "appendNumber": false,
+      "prependAdjective": false
+    },
+    "items": [
+      {
+        "_id": "c1bb89ae489b89d8",
+        "name": "Laser Cannon",
+        "type": "starshipWeapon",
+        "img": "systems/sw1e/icons/starship-weapon.svg",
+        "system": {
+          "mount": "",
+          "fireArc": "",
+          "fireControlDice": 2,
+          "fireControlPips": 0,
+          "damageDice": 4,
+          "damagePips": 0,
+          "ammo": "",
+          "shortUseNote": "",
+          "rangeNotes": "",
+          "operational": true,
+          "notes": "Single mounted laser cannon.",
+          "sourcePage": "pp. 55-57"
+        },
+        "effects": [],
+        "folder": null,
+        "sort": 10,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": "sw1e",
+          "systemVersion": "0.6.5",
+          "coreVersion": "13.35",
+          "createdTime": 1773514536255,
+          "modifiedTime": 1773514536255,
+          "lastModifiedBy": "0000000000000000"
+        }
+      }
+    ],
+    "effects": [],
+    "folder": null,
+    "sort": 20,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.6.5",
+      "coreVersion": "13.35",
+      "createdTime": 1773514536255,
+      "modifiedTime": 1773514536255,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "ca2d7f0eaefb5a10",
+    "name": "Imperial Customs Frigate",
+    "type": "starship",
+    "img": "systems/sw1e/icons/starship.svg",
+    "system": {
+      "identity": {
+        "shipClass": "Customs frigate",
+        "model": "",
+        "manufacturer": "",
+        "scale": "",
+        "crew": "16",
+        "passengers": "Room for 6 prisoners in brig",
+        "cargoCapacity": "200 metric tons (for seizure of contraband)",
+        "consumables": "6 months",
+        "description": "Imperial customs-enforcement vessel used to overawe smugglers and pirates."
+      },
+      "travel": {
+        "hyperdriveMultiplier": "x1",
+        "navComputer": "yes",
+        "hyperdriveBackups": "yes",
+        "routeNotes": "Stat block source: p. 57."
+      },
+      "codes": {
+        "sublightSpeed": {
+          "dice": 4,
+          "pips": 0
+        },
+        "maneuverability": {
+          "dice": 1,
+          "pips": 0
+        },
+        "hull": {
+          "dice": 5,
+          "pips": 0
+        },
+        "shields": {
+          "dice": 3,
+          "pips": 0
+        }
+      },
+      "status": {
+        "rangeBand": "medium",
+        "damageState": "operational",
+        "ionized": false,
+        "blownShields": false,
+        "deadInSpace": false,
+        "destroyed": false
+      },
+      "systems": {
+        "ionDrives": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "navComputer": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "hyperdrives": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "weaponSystem": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "shields": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "lateralThrusters": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        }
+      },
+      "notes": {
+        "shipNotes": "Source: p. 57.",
+        "combatNotes": "",
+        "repairNotes": "",
+        "gamemasterNotes": ""
+      }
+    },
+    "prototypeToken": {
+      "name": "Imperial Customs Frigate",
+      "displayName": 20,
+      "displayBars": 40,
+      "disposition": 0,
+      "texture": {
+        "src": "systems/sw1e/icons/starship.svg",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": null
+      },
+      "actorLink": false,
+      "bar1": {
+        "attribute": null
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "randomImg": false,
+      "appendNumber": false,
+      "prependAdjective": false
+    },
+    "items": [
+      {
+        "_id": "89ed31c2136d6ef4",
+        "name": "Laser Cannon (1 of 4)",
+        "type": "starshipWeapon",
+        "img": "systems/sw1e/icons/starship-weapon.svg",
+        "system": {
+          "mount": "",
+          "fireArc": "",
+          "fireControlDice": 2,
+          "fireControlPips": 0,
+          "damageDice": 5,
+          "damagePips": 0,
+          "ammo": "",
+          "shortUseNote": "",
+          "rangeNotes": "",
+          "operational": true,
+          "notes": "One of four laser cannons carried by the frigate.",
+          "sourcePage": "pp. 55-57"
+        },
+        "effects": [],
+        "folder": null,
+        "sort": 10,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": "sw1e",
+          "systemVersion": "0.6.5",
+          "coreVersion": "13.35",
+          "createdTime": 1773514536255,
+          "modifiedTime": 1773514536255,
+          "lastModifiedBy": "0000000000000000"
+        }
+      },
+      {
+        "_id": "702095d9cfbabf79",
+        "name": "Laser Cannon (2 of 4)",
+        "type": "starshipWeapon",
+        "img": "systems/sw1e/icons/starship-weapon.svg",
+        "system": {
+          "mount": "",
+          "fireArc": "",
+          "fireControlDice": 2,
+          "fireControlPips": 0,
+          "damageDice": 5,
+          "damagePips": 0,
+          "ammo": "",
+          "shortUseNote": "",
+          "rangeNotes": "",
+          "operational": true,
+          "notes": "One of four laser cannons carried by the frigate.",
+          "sourcePage": "pp. 55-57"
+        },
+        "effects": [],
+        "folder": null,
+        "sort": 20,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": "sw1e",
+          "systemVersion": "0.6.5",
+          "coreVersion": "13.35",
+          "createdTime": 1773514536255,
+          "modifiedTime": 1773514536255,
+          "lastModifiedBy": "0000000000000000"
+        }
+      },
+      {
+        "_id": "c1d3ad912415ccb7",
+        "name": "Laser Cannon (3 of 4)",
+        "type": "starshipWeapon",
+        "img": "systems/sw1e/icons/starship-weapon.svg",
+        "system": {
+          "mount": "",
+          "fireArc": "",
+          "fireControlDice": 2,
+          "fireControlPips": 0,
+          "damageDice": 5,
+          "damagePips": 0,
+          "ammo": "",
+          "shortUseNote": "",
+          "rangeNotes": "",
+          "operational": true,
+          "notes": "One of four laser cannons carried by the frigate.",
+          "sourcePage": "pp. 55-57"
+        },
+        "effects": [],
+        "folder": null,
+        "sort": 30,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": "sw1e",
+          "systemVersion": "0.6.5",
+          "coreVersion": "13.35",
+          "createdTime": 1773514536255,
+          "modifiedTime": 1773514536255,
+          "lastModifiedBy": "0000000000000000"
+        }
+      },
+      {
+        "_id": "7930eb7078cc167f",
+        "name": "Laser Cannon (4 of 4)",
+        "type": "starshipWeapon",
+        "img": "systems/sw1e/icons/starship-weapon.svg",
+        "system": {
+          "mount": "",
+          "fireArc": "",
+          "fireControlDice": 2,
+          "fireControlPips": 0,
+          "damageDice": 5,
+          "damagePips": 0,
+          "ammo": "",
+          "shortUseNote": "",
+          "rangeNotes": "",
+          "operational": true,
+          "notes": "One of four laser cannons carried by the frigate.",
+          "sourcePage": "pp. 55-57"
+        },
+        "effects": [],
+        "folder": null,
+        "sort": 40,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": "sw1e",
+          "systemVersion": "0.6.5",
+          "coreVersion": "13.35",
+          "createdTime": 1773514536255,
+          "modifiedTime": 1773514536255,
+          "lastModifiedBy": "0000000000000000"
+        }
+      },
+      {
+        "_id": "f89ec9fd6ba546fd",
+        "name": "Proton Torpedoes",
+        "type": "starshipWeapon",
+        "img": "systems/sw1e/icons/starship-weapon.svg",
+        "system": {
+          "mount": "",
+          "fireArc": "",
+          "fireControlDice": 2,
+          "fireControlPips": 0,
+          "damageDice": 9,
+          "damagePips": 0,
+          "ammo": "",
+          "shortUseNote": "Short-range only; target speed dice add to fire difficulty.",
+          "rangeNotes": "",
+          "operational": true,
+          "notes": "Proton torpedo launcher.",
+          "sourcePage": "pp. 55-57"
+        },
+        "effects": [],
+        "folder": null,
+        "sort": 50,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": "sw1e",
+          "systemVersion": "0.6.5",
+          "coreVersion": "13.35",
+          "createdTime": 1773514536255,
+          "modifiedTime": 1773514536255,
+          "lastModifiedBy": "0000000000000000"
+        }
+      }
+    ],
+    "effects": [],
+    "folder": null,
+    "sort": 30,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.6.5",
+      "coreVersion": "13.35",
+      "createdTime": 1773514536255,
+      "modifiedTime": 1773514536255,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "45a918466103b10a",
+    "name": "X-Wing Fighter",
+    "type": "starship",
+    "img": "systems/sw1e/icons/starship.svg",
+    "system": {
+      "identity": {
+        "shipClass": "Starfighter",
+        "model": "",
+        "manufacturer": "",
+        "scale": "",
+        "crew": "1 (plus R2 unit)",
+        "passengers": "none",
+        "cargoCapacity": "110 kilograms",
+        "consumables": "1 week (can carry pods for added consumables at a speed and maneuverability cost)",
+        "description": "The Rebel Alliance main space-superiority fighter."
+      },
+      "travel": {
+        "hyperdriveMultiplier": "x1",
+        "navComputer": "none",
+        "hyperdriveBackups": "none",
+        "routeNotes": "Stat block source: p. 55."
+      },
+      "codes": {
+        "sublightSpeed": {
+          "dice": 4,
+          "pips": 0
+        },
+        "maneuverability": {
+          "dice": 3,
+          "pips": 0
+        },
+        "hull": {
+          "dice": 4,
+          "pips": 0
+        },
+        "shields": {
+          "dice": 1,
+          "pips": 0
+        }
+      },
+      "status": {
+        "rangeBand": "medium",
+        "damageState": "operational",
+        "ionized": false,
+        "blownShields": false,
+        "deadInSpace": false,
+        "destroyed": false
+      },
+      "systems": {
+        "ionDrives": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "navComputer": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "hyperdrives": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "weaponSystem": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "shields": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "lateralThrusters": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        }
+      },
+      "notes": {
+        "shipNotes": "Source: p. 55.",
+        "combatNotes": "",
+        "repairNotes": "",
+        "gamemasterNotes": "Nav computer is listed as none. The chapter notes X-wings rely on pre-calculated route data stored by the R2 unit."
+      }
+    },
+    "prototypeToken": {
+      "name": "X-Wing Fighter",
+      "displayName": 20,
+      "displayBars": 40,
+      "disposition": 0,
+      "texture": {
+        "src": "systems/sw1e/icons/starship.svg",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": null
+      },
+      "actorLink": false,
+      "bar1": {
+        "attribute": null
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "randomImg": false,
+      "appendNumber": false,
+      "prependAdjective": false
+    },
+    "items": [
+      {
+        "_id": "73a8244b8b2d4ea0",
+        "name": "Four Laser Cannons",
+        "type": "starshipWeapon",
+        "img": "systems/sw1e/icons/starship-weapon.svg",
+        "system": {
+          "mount": "",
+          "fireArc": "",
+          "fireControlDice": 3,
+          "fireControlPips": 0,
+          "damageDice": 6,
+          "damagePips": 0,
+          "ammo": "",
+          "shortUseNote": "",
+          "rangeNotes": "",
+          "operational": true,
+          "notes": "The four laser cannons fire as one weapon.",
+          "sourcePage": "pp. 55-57"
+        },
+        "effects": [],
+        "folder": null,
+        "sort": 10,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": "sw1e",
+          "systemVersion": "0.6.5",
+          "coreVersion": "13.35",
+          "createdTime": 1773514536255,
+          "modifiedTime": 1773514536255,
+          "lastModifiedBy": "0000000000000000"
+        }
+      },
+      {
+        "_id": "f7d764f2d0784b0c",
+        "name": "Proton Torpedoes",
+        "type": "starshipWeapon",
+        "img": "systems/sw1e/icons/starship-weapon.svg",
+        "system": {
+          "mount": "",
+          "fireArc": "",
+          "fireControlDice": 2,
+          "fireControlPips": 0,
+          "damageDice": 9,
+          "damagePips": 0,
+          "ammo": "",
+          "shortUseNote": "Short-range only; target speed dice add to fire difficulty.",
+          "rangeNotes": "",
+          "operational": true,
+          "notes": "Proton torpedo launcher.",
+          "sourcePage": "pp. 55-57"
+        },
+        "effects": [],
+        "folder": null,
+        "sort": 20,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": "sw1e",
+          "systemVersion": "0.6.5",
+          "coreVersion": "13.35",
+          "createdTime": 1773514536255,
+          "modifiedTime": 1773514536255,
+          "lastModifiedBy": "0000000000000000"
+        }
+      }
+    ],
+    "effects": [],
+    "folder": null,
+    "sort": 40,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.6.5",
+      "coreVersion": "13.35",
+      "createdTime": 1773514536255,
+      "modifiedTime": 1773514536255,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "49bb04207cd7f6d8",
+    "name": "TIE Fighter",
+    "type": "starship",
+    "img": "systems/sw1e/icons/starship.svg",
+    "system": {
+      "identity": {
+        "shipClass": "Starfighter",
+        "model": "",
+        "manufacturer": "",
+        "scale": "",
+        "crew": "1",
+        "passengers": "none",
+        "cargoCapacity": "110 kilograms",
+        "consumables": "1 day",
+        "description": "TIE/ln space-superiority fighter and the mainstay of Imperial starfighter forces."
+      },
+      "travel": {
+        "hyperdriveMultiplier": "No hyperdrive carried",
+        "navComputer": "none",
+        "hyperdriveBackups": "none",
+        "routeNotes": "Stat block source: p. 55."
+      },
+      "codes": {
+        "sublightSpeed": {
+          "dice": 5,
+          "pips": 0
+        },
+        "maneuverability": {
+          "dice": 2,
+          "pips": 0
+        },
+        "hull": {
+          "dice": 2,
+          "pips": 0
+        },
+        "shields": {
+          "dice": 0,
+          "pips": 0
+        }
+      },
+      "status": {
+        "rangeBand": "medium",
+        "damageState": "operational",
+        "ionized": false,
+        "blownShields": false,
+        "deadInSpace": false,
+        "destroyed": false
+      },
+      "systems": {
+        "ionDrives": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "navComputer": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "hyperdrives": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "weaponSystem": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "shields": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        },
+        "lateralThrusters": {
+          "damaged": false,
+          "disabled": false,
+          "notes": ""
+        }
+      },
+      "notes": {
+        "shipNotes": "Source: p. 55.",
+        "combatNotes": "",
+        "repairNotes": "",
+        "gamemasterNotes": ""
+      }
+    },
+    "prototypeToken": {
+      "name": "TIE Fighter",
+      "displayName": 20,
+      "displayBars": 40,
+      "disposition": 0,
+      "texture": {
+        "src": "systems/sw1e/icons/starship.svg",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": null
+      },
+      "actorLink": false,
+      "bar1": {
+        "attribute": null
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "randomImg": false,
+      "appendNumber": false,
+      "prependAdjective": false
+    },
+    "items": [
+      {
+        "_id": "746c385657b23571",
+        "name": "Two Laser Cannons",
+        "type": "starshipWeapon",
+        "img": "systems/sw1e/icons/starship-weapon.svg",
+        "system": {
+          "mount": "",
+          "fireArc": "",
+          "fireControlDice": 2,
+          "fireControlPips": 0,
+          "damageDice": 5,
+          "damagePips": 0,
+          "ammo": "",
+          "shortUseNote": "",
+          "rangeNotes": "",
+          "operational": true,
+          "notes": "The two laser cannons fire as one weapon.",
+          "sourcePage": "pp. 55-57"
+        },
+        "effects": [],
+        "folder": null,
+        "sort": 10,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": "sw1e",
+          "systemVersion": "0.6.5",
+          "coreVersion": "13.35",
+          "createdTime": 1773514536255,
+          "modifiedTime": 1773514536255,
+          "lastModifiedBy": "0000000000000000"
+        }
+      }
+    ],
+    "effects": [],
+    "folder": null,
+    "sort": 50,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.6.5",
+      "coreVersion": "13.35",
+      "createdTime": 1773514536255,
+      "modifiedTime": 1773514536255,
+      "lastModifiedBy": "0000000000000000"
+    }
+  }
+]

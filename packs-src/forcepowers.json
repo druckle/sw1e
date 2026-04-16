@@ -1,0 +1,1016 @@
+[
+  {
+    "_id": "4a142fbaebf48dac",
+    "name": "Control Pain",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": false,
+      "controlDifficulty": "5",
+      "controlTarget": 5,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "Remain aware of injury and continue functioning through pain. Incapacitated or mortally wounded characters can act without lapsing unconscious if they also remain conscious, but are still treated as wounded for action penalties.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": "pp. 71-72"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 10,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "30905f013d16349d",
+    "name": "Remain Conscious",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": false,
+      "controlDifficulty": "10 if incapacitated; 20 if mortally wounded.",
+      "controlTarget": 0,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "On the round after being incapacitated or mortally wounded, remain conscious instead of immediately falling unconscious.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": "p. 72"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 20,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "578030a2750a717e",
+    "name": "Hibernation Trance",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": false,
+      "controlDifficulty": "20",
+      "controlTarget": 20,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "Enter a trance in which heartbeat and breathing drop to a minimum. Useful to play dead or conserve air, food, and water.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "The player states what will wake the character.",
+      "sourcePage": "p. 72"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 30,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "c1ac601f0389e6e5",
+    "name": "Accelerate Healing",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": false,
+      "controlDifficulty": "5",
+      "controlTarget": 5,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "Make two natural healing rolls for the current day, each at +2.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": "p. 72"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 40,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "391a16c16af65cf7",
+    "name": "Contort/Escape",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": false,
+      "controlDifficulty": "Loose bonds 5; handcuffs 10; serious restraints 15; maximum security 20; Houdini 30.",
+      "controlTarget": 0,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "Escape bonds by painful but physically possible contortions and joint manipulation.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": "p. 72"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 50,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "ebc8e48680f414e7",
+    "name": "Detoxify Poison",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": false,
+      "controlDifficulty": "Alcohol 5; mild poison 10; average poison 15; virulent poison 20; neurotoxin 30.",
+      "controlTarget": 0,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "Detoxify poisons or eject them from the body much faster than normal. On success, the character is not affected by the poison.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": "p. 72"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 60,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "4be58dcbbde4553f",
+    "name": "Control Disease",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": false,
+      "controlDifficulty": "Mild infection 5; high fever 10; serious sickness 15; life-threatening disease 20; massive long-standing disease 30.",
+      "controlTarget": 0,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "Direct the body to fight infection or diseased tissue. Requires at least half an hour of meditation and may take repeated attempts over weeks or months.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": "p. 77"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 70,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "0a31c84937460e26",
+    "name": "Absorb/Dissipate Energy",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": false,
+      "controlDifficulty": "Sunburn 5; intense sun 10; solar wind 15; radiation storm 20; blaster bolt 15 + the blaster damage roll.",
+      "controlTarget": 0,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "Absorb or dissipate light, heat, radiation, or blaster bolts so they do not injure the character.",
+      "keepUp": true,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "Can be kept up against continuous radiation or other continuing exposure.",
+      "sourcePage": "p. 77"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 80,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "223e650b641bbf09",
+    "name": "Receptive Telepathy",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": false,
+      "requiresSense": true,
+      "requiresAlter": false,
+      "controlDifficulty": "",
+      "controlTarget": 0,
+      "senseDifficulty": "If the target is friendly and does not wish to resist, 5 modified by relationship. Otherwise, target rolls Perception or Control and relationship modifies the result.",
+      "senseTarget": 5,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "Read surface thoughts; if the roll is at least double the difficulty, probe for deeper information and memories.",
+      "keepUp": true,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "Target Perception or Control roll when resisting.",
+      "notes": "Can be used on animals but not Droids.",
+      "sourcePage": "p. 77"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 90,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "92b11075abbc11f0",
+    "name": "Magnify Senses",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": false,
+      "requiresSense": true,
+      "requiresAlter": false,
+      "controlDifficulty": "",
+      "controlTarget": 0,
+      "senseDifficulty": "Base difficulty 5, modified by proximity.",
+      "senseTarget": 5,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "Sense things impossible with unaided senses, such as hearing faint sounds or seeing tiny or distant details.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": "p. 77"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 100,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "7d5ea7256f4e8962",
+    "name": "Life Sense",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": false,
+      "requiresSense": true,
+      "requiresAlter": false,
+      "controlDifficulty": "",
+      "controlTarget": 0,
+      "senseDifficulty": "Base difficulty 5, modified by target proximity and relationship.",
+      "senseTarget": 5,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "Sense the presence, identity, and physical condition of a searched-for being. If kept up, it can be used to track the target.",
+      "keepUp": true,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "Target Control roll adds to the senser's difficulty when the target tries to hide.",
+      "notes": "",
+      "sourcePage": "p. 77"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 110,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "0ff3c7f5da45c9b2",
+    "name": "Instinctive Astrogation",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": false,
+      "requiresSense": true,
+      "requiresAlter": false,
+      "controlDifficulty": "",
+      "controlTarget": 0,
+      "senseDifficulty": "15",
+      "senseTarget": 15,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "Use the Force to help determine a hyperspace course when astrogating.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": "p. 77"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 120,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "acc766c335ed8c23",
+    "name": "Projective Telepathy",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": true,
+      "requiresAlter": false,
+      "controlDifficulty": "5, modified by proximity.",
+      "controlTarget": 5,
+      "senseDifficulty": "If the target is friendly and does not wish to resist, 5 modified by relationship. Otherwise, target rolls Perception or Control and relationship modifies the result.",
+      "senseTarget": 5,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "Project thoughts to the target so the target hears them mentally.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "Target Perception or Control roll when resisting.",
+      "notes": "",
+      "sourcePage": "p. 78"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 130,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "efcb9d57f003a142",
+    "name": "Farseeing",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": true,
+      "requiresAlter": false,
+      "controlDifficulty": "5 modified by proximity; +5 to see the past; +10 to see the future.",
+      "controlTarget": 5,
+      "senseDifficulty": "If the target is friendly and does not wish to resist, 5 modified by relationship. If the target resists, target rolls Perception or Control modified by relationship.",
+      "senseTarget": 5,
+      "alterDifficulty": "",
+      "alterTarget": 0,
+      "effect": "See a place or person in the mind as it is now, and possibly view the past or a possible future.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "Target Perception or Control roll when resisting.",
+      "notes": "The future seen is only one possible future.",
+      "sourcePage": "p. 78"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 140,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "f3cb229dd578ce2a",
+    "name": "Telekinesis",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": false,
+      "requiresSense": false,
+      "requiresAlter": true,
+      "controlDifficulty": "",
+      "controlTarget": 0,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "5 for objects of 1 kilogram or less; higher for heavier objects.",
+      "alterTarget": 5,
+      "effect": "Levitate and move objects with the Force.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "The text states that multiple objects count as separate power uses.",
+      "sourcePage": "p. 78"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 150,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "99bfc14816485f9d",
+    "name": "Injure/Kill",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": false,
+      "requiresSense": false,
+      "requiresAlter": true,
+      "controlDifficulty": "",
+      "controlTarget": 0,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "Target makes a Perception or Control roll, modified by proximity. If the alter roll is at least double the difficulty, the target is incapacitated; at least triple, mortally wounded.",
+      "alterTarget": 0,
+      "effect": "Directly injure or kill by altering part of the target's body.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": true,
+      "resistedBy": "Target Perception or Control roll, modified by proximity.",
+      "notes": "Using this power immediately gives the user a Dark Side Point.",
+      "sourcePage": "p. 79"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 160,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "9a1ae75fa2b0603e",
+    "name": "Control Another's Pain",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": true,
+      "controlDifficulty": "5, modified by target proximity and relationship.",
+      "controlTarget": 5,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "5 for wounded; 10 for incapacitated; 20 for mortally wounded.",
+      "alterTarget": 0,
+      "effect": "Apply the same effects as Control Pain to another character.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": "p. 79"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 170,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "7b0a0dc58a5e1876",
+    "name": "Inflict Pain",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": true,
+      "controlDifficulty": "5, modified by target proximity.",
+      "controlTarget": 5,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "Target makes a Perception or Control roll, modified by proximity, then double that total.",
+      "alterTarget": 0,
+      "effect": "Inflict great agony. The target is stunned for as long as the user keeps the power up, and for two rounds thereafter.",
+      "keepUp": true,
+      "isUp": false,
+      "darkSideWarning": true,
+      "resistedBy": "Target Perception or Control roll, modified by proximity.",
+      "notes": "If the target has Force skills, Control Pain can ignore the effects. Using this power immediately gives the user a Dark Side Point.",
+      "sourcePage": "p. 79"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 180,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "7edf81e8ce84aa66",
+    "name": "Return to Consciousness",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": true,
+      "controlDifficulty": "5, modified by target proximity.",
+      "controlTarget": 5,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "10 for incapacitated characters; 20 for mortally wounded ones.",
+      "alterTarget": 0,
+      "effect": "Bring an incapacitated or mortally wounded target back to consciousness.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": "p. 79"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 190,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "90e1bdc494e7d4a8",
+    "name": "Place in Hibernation Trance",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": true,
+      "controlDifficulty": "10, modified by target relationship.",
+      "controlTarget": 10,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "10, modified by proximity.",
+      "alterTarget": 10,
+      "effect": "Put another willing character into a hibernation trance.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "The target must agree and must be in physical contact with the user.",
+      "sourcePage": "p. 79"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 200,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "b156dda2fc26b843",
+    "name": "Accelerate Another's Healing",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": true,
+      "controlDifficulty": "5, modified by relationship.",
+      "controlTarget": 5,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "5, modified by proximity.",
+      "alterTarget": 5,
+      "effect": "The target may make two natural healing rolls for the current day, each at +2.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": "p. 79"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 210,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "1432c6e20357e290",
+    "name": "Detoxify Poison in Another",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": true,
+      "controlDifficulty": "5, modified by relationship.",
+      "controlTarget": 5,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "Same as Detoxify Poison difficulty, modified by target proximity.",
+      "alterTarget": 0,
+      "effect": "Works like Detoxify Poison, but on another character.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": "p. 79"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 220,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "8a17421549c38086",
+    "name": "Control Another's Disease",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": true,
+      "controlDifficulty": "5, modified by relationship.",
+      "controlTarget": 5,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "Same as Control Disease difficulty, modified by proximity.",
+      "alterTarget": 0,
+      "effect": "Works like Control Disease, but on another character.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "",
+      "sourcePage": "p. 79"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 230,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "8db0a769d85548fa",
+    "name": "Transfer Force",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": false,
+      "requiresAlter": true,
+      "controlDifficulty": "5, modified by relationship.",
+      "controlTarget": 5,
+      "senseDifficulty": "",
+      "senseTarget": 0,
+      "alterDifficulty": "5, modified by proximity.",
+      "alterTarget": 5,
+      "effect": "Transfer a portion of the user's life force into the subject, usually to keep a mortally wounded subject alive.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "",
+      "notes": "Costs 1 Force Point on success; the text notes the point is regained because the act is inherently heroic.",
+      "sourcePage": "p. 79"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 240,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "428e8d44d751167f",
+    "name": "Affect Mind",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": true,
+      "requiresAlter": true,
+      "controlDifficulty": "5 for perceptions; 10 for memories; 15 for conclusions, all modified by proximity.",
+      "controlTarget": 0,
+      "senseDifficulty": "Target makes a Perception or Control roll, modified by relationship.",
+      "senseTarget": 0,
+      "alterDifficulty": "5 to 30 depending on whether the effect is a slight misperception, memory change, hallucination, or altered conclusion.",
+      "alterTarget": 0,
+      "effect": "Alter perceptions, memories, or conclusions so the target sees, remembers, or decides incorrectly.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": false,
+      "resistedBy": "Target Perception or Control roll, modified by relationship.",
+      "notes": "Cannot fool Droids or recording devices.",
+      "sourcePage": "p. 80"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 250,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  },
+  {
+    "_id": "96cafeb0998300c5",
+    "name": "Telekinetic Kill",
+    "type": "forcePower",
+    "img": "systems/sw1e/icons/force-power.svg",
+    "system": {
+      "requiresControl": true,
+      "requiresSense": true,
+      "requiresAlter": true,
+      "controlDifficulty": "5, modified by proximity.",
+      "controlTarget": 5,
+      "senseDifficulty": "Target makes a Perception or Control roll.",
+      "senseTarget": 0,
+      "alterDifficulty": "10 for wound; 20 for incapacitation; 30 for mortal wound; subtract the target's relationship modifier.",
+      "alterTarget": 0,
+      "effect": "Use telekinesis to injure or kill the target by crushing or disrupting the body.",
+      "keepUp": false,
+      "isUp": false,
+      "darkSideWarning": true,
+      "resistedBy": "Target Perception or Control roll.",
+      "notes": "Using this power immediately gives the user a Dark Side Point.",
+      "sourcePage": "p. 80"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 260,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "sw1e",
+      "systemVersion": "0.4.3",
+      "coreVersion": "13.35",
+      "createdTime": 1773271224394,
+      "modifiedTime": 1773271224394,
+      "lastModifiedBy": "0000000000000000"
+    }
+  }
+]
